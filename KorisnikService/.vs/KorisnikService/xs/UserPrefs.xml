@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{FB9CBD23-EEA0-4A8B-A021-80A2BFE66A1F}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.KorisnikService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="KorisnikService/Service/KorisnikService.cs">
+    <Files>
+      <File FileName="KorisnikService/Controllers/KorisnikController.cs" />
+      <File FileName="KorisnikService/Service/KorisnikService.cs" Line="23" Column="82" />
+      <File FileName="KorisnikService/Profiles/KorisnikProfile.cs" />
+      <File FileName="KorisnikService/Controllers/TipKorisnikaController.cs" />
+      <File FileName="KorisnikService/Entities.cs/TipKorisnika.cs" />
+      <File FileName="KorisnikService/Profiles/TipKorisnikaProfile.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KorisnikService" expanded="True">
+            <Node name="KorisnikService" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DtoModels" expanded="True" />
+              <Node name="Entities.cs" expanded="True" />
+              <Node name="Profiles" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Service" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

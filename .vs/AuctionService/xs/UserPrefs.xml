@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{B5C19DE4-3E6C-4539-94F2-E2116D67EFAC}|Default">
+  <MonoDevelop.Ide.ItemProperties.AuctionService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AuctionService/Services/TipNadmetanjaService.cs">
+    <Files>
+      <File FileName="AuctionService/Services/TipNadmetanjaService.cs" Line="63" Column="40" />
+      <File FileName="AuctionService/Startup.cs" />
+      <File FileName="AuctionService/Profiles/TipNadmetanjaProfile.cs" />
+      <File FileName="AuctionService/Entities/JavnoNadmetanjeContext.cs" Line="37" Column="1" />
+      <File FileName="AuctionService/Controllers/TipNadmetanjaController.cs" />
+      <File FileName="AuctionService/Entities/StatusNadmetanja.cs" />
+      <File FileName="AuctionService/Entities/TipJavnogNadmetanja.cs" Line="18" Column="23" />
+      <File FileName="AuctionService/application.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AuctionService" expanded="True">
+            <Node name="AuctionService" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="TipNadmetanjaService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

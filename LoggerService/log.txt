@@ -1,0 +1,465 @@
+DEBUG Hosting starting
+DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+INFO Now listening on: http://localhost:5093
+DEBUG Loaded hosting startup assembly LoggerService
+DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+INFO Application started. Press Ctrl+C to shut down.
+INFO Hosting environment: Development
+INFO Content root path: C:\Users\milan\source\repos\LoggerService\LoggerService
+DEBUG Hosting started
+DEBUG Connection id "0HMOG9D5TBI54" received FIN.
+DEBUG Connection id "0HMOG9D5TBI54" accepted.
+DEBUG Connection id "0HMOG9D5TBI54" started.
+DEBUG Connection id "0HMOG9D5TBI54" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9D5TBI54" disconnecting.
+DEBUG Connection id "0HMOG9D5TBI54" stopped.
+DEBUG Connection id "0HMOG9D5TBI55" accepted.
+DEBUG Connection id "0HMOG9D5TBI55" started.
+DEBUG Connection id "0HMOG9D5TBI56" accepted.
+DEBUG Connection id "0HMOG9D5TBI56" started.
+INFO Request starting HTTP/1.1 GET http://localhost:5093/ - -
+DEBUG Wildcard detected, all requests with hosts will be allowed.
+WARN Failed to determine the https port for redirect.
+DEBUG No candidates found for the request path '/'
+DEBUG Request did not match any endpoints
+DEBUG Connection id "0HMOG9D5TBI55" completed keep alive response.
+INFO Request finished HTTP/1.1 GET http://localhost:5093/ - - - 404 0 - 186.1685ms
+DEBUG Connection id "0HMOG9D5TBI56" received FIN.
+DEBUG Connection id "0HMOG9D5TBI55" received FIN.
+DEBUG Connection id "0HMOG9D5TBI56" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9D5TBI55" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9D5TBI56" disconnecting.
+DEBUG Connection id "0HMOG9D5TBI55" disconnecting.
+DEBUG Connection id "0HMOG9D5TBI55" stopped.
+DEBUG Connection id "0HMOG9D5TBI56" stopped.
+DEBUG Hosting starting
+DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+INFO Now listening on: http://localhost:5093
+DEBUG Loaded hosting startup assembly LoggerService
+DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+INFO Application started. Press Ctrl+C to shut down.
+INFO Hosting environment: Development
+INFO Content root path: C:\Users\milan\source\repos\LoggerService\LoggerService
+DEBUG Hosting started
+DEBUG Connection id "0HMOG9JSEK5JA" received FIN.
+DEBUG Connection id "0HMOG9JSEK5JB" received FIN.
+DEBUG Connection id "0HMOG9JSEK5JB" accepted.
+DEBUG Connection id "0HMOG9JSEK5JA" accepted.
+DEBUG Connection id "0HMOG9JSEK5JA" started.
+DEBUG Connection id "0HMOG9JSEK5JB" started.
+DEBUG Connection id "0HMOG9JSEK5JA" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9JSEK5JB" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9JSEK5JA" disconnecting.
+DEBUG Connection id "0HMOG9JSEK5JB" disconnecting.
+DEBUG Connection id "0HMOG9JSEK5JB" stopped.
+DEBUG Connection id "0HMOG9JSEK5JA" stopped.
+DEBUG Connection id "0HMOG9JSEK5JC" accepted.
+DEBUG Connection id "0HMOG9JSEK5JD" accepted.
+DEBUG Connection id "0HMOG9JSEK5JD" started.
+DEBUG Connection id "0HMOG9JSEK5JC" started.
+INFO Request starting HTTP/1.1 GET http://localhost:5093/ - -
+DEBUG Wildcard detected, all requests with hosts will be allowed.
+WARN Failed to determine the https port for redirect.
+DEBUG No candidates found for the request path '/'
+DEBUG Request did not match any endpoints
+DEBUG Connection id "0HMOG9JSEK5JC" completed keep alive response.
+INFO Request finished HTTP/1.1 GET http://localhost:5093/ - - - 404 0 - 66.8159ms
+DEBUG Connection id "0HMOG9JSEK5JC" received FIN.
+DEBUG Connection id "0HMOG9JSEK5JD" received FIN.
+DEBUG Connection id "0HMOG9JSEK5JC" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9JSEK5JC" disconnecting.
+DEBUG Connection id "0HMOG9JSEK5JD" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9JSEK5JD" disconnecting.
+DEBUG Connection id "0HMOG9JSEK5JC" stopped.
+DEBUG Connection id "0HMOG9JSEK5JD" stopped.
+DEBUG Connection id "0HMOG9JSEK5JE" accepted.
+DEBUG Connection id "0HMOG9JSEK5JE" started.
+INFO Request starting HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114
+DEBUG 1 candidate(s) found for the request path '/api/logger'
+DEBUG Endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)' with route pattern 'api/logger' is valid for the request path '/api/logger'
+DEBUG Request matched endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Executing endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Route matched with {action = "CreateMesage", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[LoggerService.Entities.Message] CreateMesage(LoggerService.Entities.Message) on controller LoggerService.Controllers.LoggerController (LoggerService).
+DEBUG Execution plan of authorization filters (in the following order): None
+DEBUG Execution plan of resource filters (in the following order): None
+DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+DEBUG Execution plan of exception filters (in the following order): None
+DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+DEBUG Executing controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Executed controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' using the name '' in request data ...
+DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+DEBUG Connection id "0HMOG9JSEK5JE", Request id "0HMOG9JSEK5JE:00000001": started reading request body.
+DEBUG Connection id "0HMOG9JSEK5JE", Request id "0HMOG9JSEK5JE:00000001": done reading request body.
+DEBUG JSON input formatter succeeded, deserializing to type 'LoggerService.Entities.Message'
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Done attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG The request has model state errors, returning an error response.
+DEBUG Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+DEBUG No information found on request to perform content negotiation.
+DEBUG Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+INFO Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+INFO Executed action LoggerService.Controllers.LoggerController.CreateMesage (LoggerService) in 77.6863ms
+INFO Executed endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+DEBUG Connection id "0HMOG9JSEK5JE" completed keep alive response.
+INFO Request finished HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114 - 400 - application/problem+json;+charset=utf-8 130.7818ms
+DEBUG Connection id "0HMOG9JSEK5JE" received FIN.
+DEBUG Connection id "0HMOG9JSEK5JE" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9JSEK5JE" disconnecting.
+DEBUG Connection id "0HMOG9JSEK5JE" stopped.
+DEBUG Connection id "0HMOG9JSEK5JF" accepted.
+DEBUG Connection id "0HMOG9JSEK5JF" started.
+INFO Request starting HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114
+DEBUG 1 candidate(s) found for the request path '/api/logger'
+DEBUG Endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)' with route pattern 'api/logger' is valid for the request path '/api/logger'
+DEBUG Request matched endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Executing endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Route matched with {action = "CreateMesage", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[LoggerService.Entities.Message] CreateMesage(LoggerService.Entities.Message) on controller LoggerService.Controllers.LoggerController (LoggerService).
+DEBUG Execution plan of authorization filters (in the following order): None
+DEBUG Execution plan of resource filters (in the following order): None
+DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+DEBUG Execution plan of exception filters (in the following order): None
+DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+DEBUG Executing controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Executed controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' using the name '' in request data ...
+DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+DEBUG Connection id "0HMOG9JSEK5JF", Request id "0HMOG9JSEK5JF:00000001": started reading request body.
+DEBUG Connection id "0HMOG9JSEK5JF", Request id "0HMOG9JSEK5JF:00000001": done reading request body.
+DEBUG JSON input formatter succeeded, deserializing to type 'LoggerService.Entities.Message'
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Done attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG The request has model state errors, returning an error response.
+DEBUG Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+DEBUG No information found on request to perform content negotiation.
+DEBUG Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+INFO Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+INFO Executed action LoggerService.Controllers.LoggerController.CreateMesage (LoggerService) in 5.956ms
+INFO Executed endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+DEBUG Connection id "0HMOG9JSEK5JF" completed keep alive response.
+INFO Request finished HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114 - 400 - application/problem+json;+charset=utf-8 51.8903ms
+DEBUG Connection id "0HMOG9JSEK5JF" received FIN.
+DEBUG Connection id "0HMOG9JSEK5JF" disconnecting.
+DEBUG Connection id "0HMOG9JSEK5JF" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9JSEK5JF" stopped.
+DEBUG Hosting starting
+DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+INFO Now listening on: http://localhost:5093
+DEBUG Loaded hosting startup assembly LoggerService
+DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+INFO Application started. Press Ctrl+C to shut down.
+INFO Hosting environment: Development
+INFO Content root path: C:\Users\milan\source\repos\LoggerService\LoggerService
+DEBUG Hosting started
+DEBUG Connection id "0HMOG9R94TI6A" accepted.
+DEBUG Connection id "0HMOG9R94TI6A" started.
+DEBUG Connection id "0HMOG9R94TI6B" received FIN.
+DEBUG Connection id "0HMOG9R94TI6A" received FIN.
+DEBUG Connection id "0HMOG9R94TI6B" accepted.
+DEBUG Connection id "0HMOG9R94TI6B" started.
+DEBUG Connection id "0HMOG9R94TI6A" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9R94TI6B" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9R94TI6A" disconnecting.
+DEBUG Connection id "0HMOG9R94TI6B" disconnecting.
+DEBUG Connection id "0HMOG9R94TI6B" stopped.
+DEBUG Connection id "0HMOG9R94TI6A" stopped.
+DEBUG Connection id "0HMOG9R94TI6C" accepted.
+DEBUG Connection id "0HMOG9R94TI6C" started.
+DEBUG Connection id "0HMOG9R94TI6D" accepted.
+DEBUG Connection id "0HMOG9R94TI6D" started.
+INFO Request starting HTTP/1.1 GET http://localhost:5093/ - -
+DEBUG Wildcard detected, all requests with hosts will be allowed.
+WARN Failed to determine the https port for redirect.
+DEBUG No candidates found for the request path '/'
+DEBUG Request did not match any endpoints
+DEBUG Connection id "0HMOG9R94TI6C" completed keep alive response.
+INFO Request finished HTTP/1.1 GET http://localhost:5093/ - - - 404 0 - 88.1367ms
+DEBUG Connection id "0HMOG9R94TI6D" received FIN.
+DEBUG Connection id "0HMOG9R94TI6C" received FIN.
+DEBUG Connection id "0HMOG9R94TI6D" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9R94TI6D" disconnecting.
+DEBUG Connection id "0HMOG9R94TI6C" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9R94TI6C" disconnecting.
+DEBUG Connection id "0HMOG9R94TI6D" stopped.
+DEBUG Connection id "0HMOG9R94TI6C" stopped.
+DEBUG Connection id "0HMOG9R94TI6E" accepted.
+DEBUG Connection id "0HMOG9R94TI6E" started.
+INFO Request starting HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114
+DEBUG 1 candidate(s) found for the request path '/api/logger'
+DEBUG Endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)' with route pattern 'api/logger' is valid for the request path '/api/logger'
+DEBUG Request matched endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Executing endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Route matched with {action = "CreateMesage", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[LoggerService.Entities.Message] CreateMesage(LoggerService.Entities.Message) on controller LoggerService.Controllers.LoggerController (LoggerService).
+DEBUG Execution plan of authorization filters (in the following order): None
+DEBUG Execution plan of resource filters (in the following order): None
+DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+DEBUG Execution plan of exception filters (in the following order): None
+DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+DEBUG Executing controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Executed controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' using the name '' in request data ...
+DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+DEBUG Connection id "0HMOG9R94TI6E", Request id "0HMOG9R94TI6E:00000001": started reading request body.
+DEBUG Connection id "0HMOG9R94TI6E", Request id "0HMOG9R94TI6E:00000001": done reading request body.
+DEBUG JSON input formatter succeeded, deserializing to type 'LoggerService.Entities.Message'
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Done attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG The request has model state errors, returning an error response.
+DEBUG Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+DEBUG No information found on request to perform content negotiation.
+DEBUG Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+INFO Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+INFO Executed action LoggerService.Controllers.LoggerController.CreateMesage (LoggerService) in 84.3667ms
+INFO Executed endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+DEBUG Connection id "0HMOG9R94TI6E" completed keep alive response.
+INFO Request finished HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114 - 400 - application/problem+json;+charset=utf-8 136.0918ms
+DEBUG Connection id "0HMOG9R94TI6E" received FIN.
+DEBUG Connection id "0HMOG9R94TI6E" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9R94TI6E" disconnecting.
+DEBUG Connection id "0HMOG9R94TI6E" stopped.
+DEBUG Connection id "0HMOG9R94TI6F" accepted.
+DEBUG Connection id "0HMOG9R94TI6F" started.
+INFO Request starting HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114
+DEBUG 1 candidate(s) found for the request path '/api/logger'
+DEBUG Endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)' with route pattern 'api/logger' is valid for the request path '/api/logger'
+DEBUG Request matched endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Executing endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Route matched with {action = "CreateMesage", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[LoggerService.Entities.Message] CreateMesage(LoggerService.Entities.Message) on controller LoggerService.Controllers.LoggerController (LoggerService).
+DEBUG Execution plan of authorization filters (in the following order): None
+DEBUG Execution plan of resource filters (in the following order): None
+DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+DEBUG Execution plan of exception filters (in the following order): None
+DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+DEBUG Executing controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Executed controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' using the name '' in request data ...
+DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+DEBUG Connection id "0HMOG9R94TI6F", Request id "0HMOG9R94TI6F:00000001": started reading request body.
+DEBUG Connection id "0HMOG9R94TI6F", Request id "0HMOG9R94TI6F:00000001": done reading request body.
+DEBUG JSON input formatter succeeded, deserializing to type 'LoggerService.Entities.Message'
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Done attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG The request has model state errors, returning an error response.
+DEBUG Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+DEBUG No information found on request to perform content negotiation.
+DEBUG Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+INFO Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+INFO Executed action LoggerService.Controllers.LoggerController.CreateMesage (LoggerService) in 3.0038ms
+INFO Executed endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+DEBUG Connection id "0HMOG9R94TI6F" completed keep alive response.
+INFO Request finished HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114 - 400 - application/problem+json;+charset=utf-8 11.0335ms
+DEBUG Connection id "0HMOG9R94TI6F" received FIN.
+DEBUG Connection id "0HMOG9R94TI6F" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9R94TI6F" disconnecting.
+DEBUG Connection id "0HMOG9R94TI6F" stopped.
+DEBUG Connection id "0HMOG9R94TI6G" accepted.
+DEBUG Connection id "0HMOG9R94TI6G" started.
+INFO Request starting HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114
+DEBUG 1 candidate(s) found for the request path '/api/logger'
+DEBUG Endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)' with route pattern 'api/logger' is valid for the request path '/api/logger'
+DEBUG Request matched endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Executing endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Route matched with {action = "CreateMesage", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[LoggerService.Entities.Message] CreateMesage(LoggerService.Entities.Message) on controller LoggerService.Controllers.LoggerController (LoggerService).
+DEBUG Execution plan of authorization filters (in the following order): None
+DEBUG Execution plan of resource filters (in the following order): None
+DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+DEBUG Execution plan of exception filters (in the following order): None
+DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+DEBUG Executing controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Executed controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' using the name '' in request data ...
+DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+DEBUG Connection id "0HMOG9R94TI6G", Request id "0HMOG9R94TI6G:00000001": started reading request body.
+DEBUG Connection id "0HMOG9R94TI6G", Request id "0HMOG9R94TI6G:00000001": done reading request body.
+DEBUG JSON input formatter succeeded, deserializing to type 'LoggerService.Entities.Message'
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Done attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG The request has model state errors, returning an error response.
+DEBUG Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+DEBUG No information found on request to perform content negotiation.
+DEBUG Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+INFO Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+INFO Executed action LoggerService.Controllers.LoggerController.CreateMesage (LoggerService) in 1.1188ms
+INFO Executed endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+DEBUG Connection id "0HMOG9R94TI6G" completed keep alive response.
+INFO Request finished HTTP/1.1 POST http://localhost:5093/api/logger application/json;+charset=utf-8 114 - 400 - application/problem+json;+charset=utf-8 1.6504ms
+DEBUG Connection id "0HMOG9R94TI6G" received FIN.
+DEBUG Connection id "0HMOG9R94TI6G" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOG9R94TI6G" disconnecting.
+DEBUG Connection id "0HMOG9R94TI6G" stopped.
+DEBUG Hosting starting
+DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+INFO Now listening on: http://localhost:55201
+DEBUG Loaded hosting startup assembly LoggerService
+DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+INFO Application started. Press Ctrl+C to shut down.
+INFO Hosting environment: Development
+INFO Content root path: C:\Users\milan\source\repos\LoggerService\LoggerService
+DEBUG Hosting started
+DEBUG Connection id "0HMOGA0B1EN29" accepted.
+DEBUG Connection id "0HMOGA0B1EN2A" accepted.
+DEBUG Connection id "0HMOGA0B1EN2A" started.
+DEBUG Connection id "0HMOGA0B1EN29" started.
+DEBUG Connection id "0HMOGA0B1EN29" received FIN.
+DEBUG Connection id "0HMOGA0B1EN2A" received FIN.
+DEBUG Connection id "0HMOGA0B1EN2A" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOGA0B1EN29" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOGA0B1EN29" disconnecting.
+DEBUG Connection id "0HMOGA0B1EN2A" disconnecting.
+DEBUG Connection id "0HMOGA0B1EN2A" stopped.
+DEBUG Connection id "0HMOGA0B1EN29" stopped.
+DEBUG Hosting starting
+DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+INFO Now listening on: http://localhost:55201
+DEBUG Loaded hosting startup assembly LoggerService
+DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+INFO Application started. Press Ctrl+C to shut down.
+INFO Hosting environment: Development
+INFO Content root path: C:\Users\milan\source\repos\LoggerService\LoggerService
+DEBUG Hosting started
+DEBUG Connection id "0HMOGA1A7NDKQ" received FIN.
+DEBUG Connection id "0HMOGA1A7NDKR" received FIN.
+DEBUG Connection id "0HMOGA1A7NDKQ" accepted.
+DEBUG Connection id "0HMOGA1A7NDKR" accepted.
+DEBUG Connection id "0HMOGA1A7NDKQ" started.
+DEBUG Connection id "0HMOGA1A7NDKR" started.
+DEBUG Connection id "0HMOGA1A7NDKQ" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOGA1A7NDKR" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOGA1A7NDKR" disconnecting.
+DEBUG Connection id "0HMOGA1A7NDKQ" disconnecting.
+DEBUG Connection id "0HMOGA1A7NDKR" stopped.
+DEBUG Connection id "0HMOGA1A7NDKQ" stopped.
+DEBUG Connection id "0HMOGA1A7NDKS" received FIN.
+DEBUG Connection id "0HMOGA1A7NDKS" accepted.
+DEBUG Connection id "0HMOGA1A7NDKS" started.
+DEBUG Connection id "0HMOGA1A7NDKS" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOGA1A7NDKS" disconnecting.
+DEBUG Connection id "0HMOGA1A7NDKS" stopped.
+DEBUG Connection id "0HMOGA1A7NDKT" accepted.
+DEBUG Connection id "0HMOGA1A7NDKT" started.
+INFO Request starting HTTP/1.1 GET http://localhost:55201/api/tipoviNadmetanja application/json 73
+DEBUG Wildcard detected, all requests with hosts will be allowed.
+WARN Failed to determine the https port for redirect.
+DEBUG No candidates found for the request path '/api/tipoviNadmetanja'
+DEBUG Request did not match any endpoints
+DEBUG Connection id "0HMOGA1A7NDKT" completed keep alive response.
+INFO Request finished HTTP/1.1 GET http://localhost:55201/api/tipoviNadmetanja application/json 73 - 404 0 - 52.5699ms
+DEBUG Connection id "0HMOGA1A7NDKT", Request id "0HMOGA1A7NDKT:00000001": started reading request body.
+DEBUG Connection id "0HMOGA1A7NDKT", Request id "0HMOGA1A7NDKT:00000001": done reading request body.
+INFO Request starting HTTP/1.1 GET http://localhost:55201/api/tipoviNadmetanja application/json 73
+DEBUG No candidates found for the request path '/api/tipoviNadmetanja'
+DEBUG Request did not match any endpoints
+DEBUG Connection id "0HMOGA1A7NDKT" completed keep alive response.
+INFO Request finished HTTP/1.1 GET http://localhost:55201/api/tipoviNadmetanja application/json 73 - 404 0 - 0.6379ms
+DEBUG Connection id "0HMOGA1A7NDKT", Request id "0HMOGA1A7NDKT:00000002": started reading request body.
+DEBUG Connection id "0HMOGA1A7NDKT", Request id "0HMOGA1A7NDKT:00000002": done reading request body.
+DEBUG Connection id "0HMOGA1A7NDKU" accepted.
+DEBUG Connection id "0HMOGA1A7NDKU" started.
+INFO Request starting HTTP/1.1 POST http://localhost:55201/api/logger application/json;+charset=utf-8 114
+DEBUG 1 candidate(s) found for the request path '/api/logger'
+DEBUG Endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)' with route pattern 'api/logger' is valid for the request path '/api/logger'
+DEBUG Request matched endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Executing endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Route matched with {action = "CreateMesage", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[LoggerService.Entities.Message] CreateMesage(LoggerService.Entities.Message) on controller LoggerService.Controllers.LoggerController (LoggerService).
+DEBUG Execution plan of authorization filters (in the following order): None
+DEBUG Execution plan of resource filters (in the following order): None
+DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+DEBUG Execution plan of exception filters (in the following order): None
+DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+DEBUG Executing controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Executed controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' using the name '' in request data ...
+DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+DEBUG Connection id "0HMOGA1A7NDKU", Request id "0HMOGA1A7NDKU:00000001": started reading request body.
+DEBUG Connection id "0HMOGA1A7NDKU", Request id "0HMOGA1A7NDKU:00000001": done reading request body.
+DEBUG JSON input formatter succeeded, deserializing to type 'LoggerService.Entities.Message'
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Done attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG The request has model state errors, returning an error response.
+DEBUG Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+DEBUG No information found on request to perform content negotiation.
+DEBUG Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+INFO Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+INFO Executed action LoggerService.Controllers.LoggerController.CreateMesage (LoggerService) in 64.1798ms
+INFO Executed endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+DEBUG Connection id "0HMOGA1A7NDKU" completed keep alive response.
+INFO Request finished HTTP/1.1 POST http://localhost:55201/api/logger application/json;+charset=utf-8 114 - 400 - application/problem+json;+charset=utf-8 128.3435ms
+DEBUG Connection id "0HMOGA1A7NDKU" received FIN.
+DEBUG Connection id "0HMOGA1A7NDKU" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOGA1A7NDKU" disconnecting.
+DEBUG Connection id "0HMOGA1A7NDKU" stopped.
+DEBUG Connection id "0HMOGA1A7NDKV" accepted.
+DEBUG Connection id "0HMOGA1A7NDKV" started.
+INFO Request starting HTTP/1.1 POST http://localhost:55201/api/logger application/json;+charset=utf-8 114
+DEBUG 1 candidate(s) found for the request path '/api/logger'
+DEBUG Endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)' with route pattern 'api/logger' is valid for the request path '/api/logger'
+DEBUG Request matched endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Executing endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+INFO Route matched with {action = "CreateMesage", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[LoggerService.Entities.Message] CreateMesage(LoggerService.Entities.Message) on controller LoggerService.Controllers.LoggerController (LoggerService).
+DEBUG Execution plan of authorization filters (in the following order): None
+DEBUG Execution plan of resource filters (in the following order): None
+DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+DEBUG Execution plan of exception filters (in the following order): None
+DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+DEBUG Executing controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Executed controller factory for controller LoggerService.Controllers.LoggerController (LoggerService)
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Attempting to bind parameter 'message' of type 'LoggerService.Entities.Message' using the name '' in request data ...
+DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json; charset=utf-8'.
+DEBUG Connection id "0HMOGA1A7NDKV", Request id "0HMOGA1A7NDKV:00000001": started reading request body.
+DEBUG Connection id "0HMOGA1A7NDKV", Request id "0HMOGA1A7NDKV:00000001": done reading request body.
+DEBUG JSON input formatter succeeded, deserializing to type 'LoggerService.Entities.Message'
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Done attempting to bind parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG Attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message' ...
+DEBUG Done attempting to validate the bound parameter 'message' of type 'LoggerService.Entities.Message'.
+DEBUG The request has model state errors, returning an error response.
+DEBUG Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+DEBUG No information found on request to perform content negotiation.
+DEBUG Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'.
+DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+INFO Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+INFO Executed action LoggerService.Controllers.LoggerController.CreateMesage (LoggerService) in 1.596ms
+INFO Executed endpoint 'LoggerService.Controllers.LoggerController.CreateMesage (LoggerService)'
+DEBUG Connection id "0HMOGA1A7NDKV" completed keep alive response.
+INFO Request finished HTTP/1.1 POST http://localhost:55201/api/logger application/json;+charset=utf-8 114 - 400 - application/problem+json;+charset=utf-8 2.3303ms
+DEBUG Connection id "0HMOGA1A7NDKV" received FIN.
+DEBUG Connection id "0HMOGA1A7NDKV" sending FIN because: "The client closed the connection."
+DEBUG Connection id "0HMOGA1A7NDKV" disconnecting.
+DEBUG Connection id "0HMOGA1A7NDKV" stopped.

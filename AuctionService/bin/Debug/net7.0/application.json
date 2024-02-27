@@ -1,0 +1,22 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information",
+
+    }
+  },
+  /*"Jwt": {
+    "Key": "secretsecretkey",
+    "Issuer": "URIS.uns.ac.rs"
+  },*/
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "javnoNadmetanjeDB": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=javnoNadmetanjeDB;Integrated Security=True;Connect Timeout=30;"
+  },
+  "Services": {
+    "LoggerService": "https://localhost:55201/",
+    "Adresa": "http://localhost:7017/"
+  }
+}

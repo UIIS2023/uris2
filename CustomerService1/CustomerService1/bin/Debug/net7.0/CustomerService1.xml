@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomerService1</name>
+    </assembly>
+    <members>
+        <member name="M:CustomerService1.Controllers.AuthController.Authenticate(CustomerService1.Models.Principal)">
+            <summary>
+            Sluzi za autentifikaciju korisnika
+            </summary>
+            <param name="principal">Model sa podacima na osnovu kojih se vrši autentifikacija</param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.KontaktOsobaController.getKontaktOsobe">
+            <summary>
+            Vraca sve kontakt osobe.
+            </summary>
+            <returns>Lista kontakt osoba</returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.KontaktOsobaController.getKontatOsobaById(System.Guid)">
+            <summary>
+            Vraca kontakt osobu sa zeljenim id-jem.
+            </summary>
+            <param name="kontaktOsobaId">Id kontakt osobe</param>
+            <returns>Vraca jednu kontakt osobu.</returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.KontaktOsobaController.postKontaktOsoba(CustomerService1.Models.KontaktOsobaCreationDto)">
+            <summary>
+            Kreiranje nove kontakt osobe.
+            </summary>
+            <param name="kontaktOsoba">Model kontakt osobe</param>
+            <returns>Potvrda o kreiranoj kontakt osobi</returns>
+            <remarks>
+            Primer zahteva za kreiranje nove kontakt osobe \ 
+            POST /api/kontaktOsobe  \ 
+            { 
+                "ime": "Sonja",
+                "prezime": "Peric",
+                "funkcija": "funkc4",
+                "telefon": "0644521498"       
+            }
+            </remarks>
+        </member>
+        <member name="M:CustomerService1.Controllers.KontaktOsobaController.deleteKontaktOsoba(System.Guid)">
+            <summary>
+            Brisanje kontakt osobe.
+            </summary>
+            <param name="kontaktOsobaId">Id kontakt osobe koja se brise</param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.KontaktOsobaController.putKontaktOsoba(CustomerService1.Entities.KontaktOsoba)">
+             <summary>
+             Modifikovanje kontakt osobe.
+             </summary>
+             <param name="kontaktOsoba">Model kontakt osobe</param>
+             <returns>Potvrda o modifikovanoj kontakt osobi.</returns>
+             <remarks>
+             Primer zahteva za modifikovanje kontakt osobe
+             {
+            "kontaktOsobaID": "a215e4cb-a427-40cf-88b2-8488d140a939",
+            "ime": "Sofija",
+            "prezime": "Nikolic",
+            "funkcija": "funkc5",
+            "telefon": "0649855123"
+            }
+             </remarks>
+        </member>
+        <member name="M:CustomerService1.Controllers.KupacController.getKupci">
+            <summary>
+            Vraca sve kupce
+            </summary>
+            <returns>Lista kupaca</returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.KupacController.getKupacById(System.Guid)">
+            <summary>
+            Vraca kupca sa zeljenim id-jem
+            </summary>
+            <param name="kupacId">Id kupca</param>
+            <returns>Vraca jednog kupca</returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.KupacController.postKupac(CustomerService1.Models.KupacCreationDto)">
+             <summary>
+             Kreiranje novog kupca
+             </summary>
+             <param name="kupac">Model kupca</param>
+             <returns>Potvrda o kreiranom kupcu</returns>
+             <remarks>
+             Primer zahteva za kreiranje novog kupca
+             {
+            "fizPravno": true,
+            "ostvarenaPovrsina": "150",
+            "zabrana": true,
+            "pocetakZabrane": "2023-02-13T13:16:11.043Z",
+            "duzinaZabrane": "1 godina",
+            "prestanakZabrane": "2024-02-13T13:16:11.043Z",
+            "ovlascenoLiceID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "prioritetID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "brTel1": "1111111",
+            "brTel2": "2222",
+            "adresaID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "uplataID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "email": "sl200@gmail.com",
+            "brojRacuna": "2121212"
+            }
+             </remarks>
+        </member>
+        <member name="M:CustomerService1.Controllers.KupacController.deleteKupac(System.Guid)">
+            <summary>
+            Brisanje kupca 
+            </summary>
+            <param name="kupacId">Id kupca koji se brise</param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.KupacController.putKupac(CustomerService1.Entities.Kupac)">
+             <summary>
+             Modifikovanje kupca
+             </summary>
+             <param name="kupac">Model kupca</param>
+             <returns>Potvrda o modifikovanom kupcu</returns>
+             ///<remarks>
+             Primer zahteva za modifikovanje kupca
+             {
+            "kupacID": "208a48a5-371c-4f9d-ac23-18bb176ff8f3",
+             "fizPravno": true,
+            "ostvarenaPovrsina": "200",
+             "zabrana": true,
+             "pocetakZabrane": "2023-02-13T13:16:11.070Z",
+            "duzinaZabrane": "1",
+            "prestanakZabrane": "2024-02-13T13:16:11.070Z",
+             "ovlascenoLiceID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+             "prioritetID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+             "brTel1": "0654355498",
+             "brTel2": "256487",
+             "adresaID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "uplataID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+             "email": "nikola@gmail.com",
+             "brojRacuna": "1212121",
+             "ovlascenoLice": {
+               "ovlascenoLiceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+               "ime": "Dusan",
+               "prezime": "Vojinovic",
+              "licaZaKojaVrsiLicitaciju": [
+                "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+               ],
+               "brojTabli": [
+                 0
+               ]
+               },
+             "uplata": {
+              "uplataID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "iznos": 15000
+            },
+            "adresa": {
+              "adresaId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "ulica": "Bulevar Oslobodjenja",
+              "broj": "165",
+              "mesto": "Novi Sad",
+              "postanskiBroj": "21000",
+              "drzava": "Srbija"
+            }
+             }
+             </remarks>
+        </member>
+        <member name="M:CustomerService1.Controllers.PrioritetController.getPrioriteti">
+            <summary>
+            Vraca sve prioritete
+            </summary>
+            <returns>Lista prioriteta</returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.PrioritetController.getPrioritetById(System.Guid)">
+            <summary>
+            Vraca prioritet sa zeljenim id-jem
+            </summary>
+            <param name="prioritetId">Id prioriteta</param>
+            <returns>Vraca jedan prioritet</returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.PrioritetController.postPrioritet(CustomerService1.Models.PrioritetCreationDto)">
+             <summary>
+             Kreiranje novog prioriteta
+             </summary>
+             <param name="prioritet">Model prioriteta</param>
+             <returns>Potvrda o kreiranom prioritetu</returns>
+             <remarks>
+             Primer zahteva za kreiranje novog prioriteta
+             {
+            "opisPrioriteta": "prioritet5"
+            }
+             </remarks>
+        </member>
+        <member name="M:CustomerService1.Controllers.PrioritetController.deletePrioritet(System.Guid)">
+            <summary>
+            Brisanje prioriteta
+            </summary>
+            <param name="prioritetId">Id prioriteta koji se brise</param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomerService1.Controllers.PrioritetController.putPrioritet(CustomerService1.Entities.Prioritet)">
+             <summary>
+             Modifikovanje prioriteta
+             </summary>
+             <param name="prioritet">Model prioriteta</param>
+             <returns>Potvrda o modifikovanom prioritetu</returns>
+             <remarks>
+             Primer zahteva za modifikovanje prioriteta
+             {
+            "prioritetID": "1de13266-85e8-4120-8b1f-daacc32c5811",
+             "opisPrioriteta": "prior2"
+            }
+             </remarks>
+        </member>
+        <member name="P:CustomerService1.Entities.KontaktOsobaConfirmation.KontaktOsobaID">
+            <summary>
+            Id kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Entities.KontaktOsobaConfirmation.Ime">
+            <summary>
+            Ime kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Entities.KontaktOsobaConfirmation.Prezime">
+            <summary>
+            Prezime kontakt osobe
+            </summary>
+        </member>
+        <member name="T:CustomerService1.Migrations.migracije">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomerService1.Migrations.migracije.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomerService1.Migrations.migracije.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomerService1.Migrations.migracije.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomerService1.Models.AdresaDto.adresaId">
+            <summary>
+            Id adrese
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.AdresaDto.ulica">
+            <summary>
+            Ulica
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.AdresaDto.broj">
+            <summary>
+            Broj ulice
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.AdresaDto.mesto">
+            <summary>
+            Mesto
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.AdresaDto.postanskiBroj">
+            <summary>
+            Postanski broj
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.AdresaDto.Drzava">
+            <summary>
+            Drzava
+            </summary>
+            
+        </member>
+        <member name="T:CustomerService1.Models.KontaktOsobaConfirmationDto">
+            <summary>
+            DTO za potvrdu kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaConfirmationDto.KontaktOsobaID">
+            <summary>
+            Id kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaConfirmationDto.Ime">
+            <summary>
+            Ime kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaConfirmationDto.Prezime">
+            <summary>
+            Prezime kontakt osobe
+            </summary>
+        </member>
+        <member name="T:CustomerService1.Models.KontaktOsobaCreationDto">
+            <summary>
+            DTO za kreiranje kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaCreationDto.Ime">
+            <summary>
+            Ime kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaCreationDto.Prezime">
+            <summary>
+            Prezime kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaCreationDto.Funkcija">
+            <summary>
+            Funkcija kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaCreationDto.Telefon">
+            <summary>
+            Telefon kontakt osobe
+            </summary>
+        </member>
+        <member name="T:CustomerService1.Models.KontaktOsobaDto">
+            <summary>
+            DTO za kontakt osobu
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaDto.KontaktOsobaID">
+            <summary>
+            Id kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaDto.Ime">
+            <summary>
+            Ima kontakt osobe
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KontaktOsobaDto.Prezime">
+            <summary>
+            Prezime kontakt osobe
+            </summary>
+        </member>
+        <member name="T:CustomerService1.Models.KupacConfirmationDto">
+            <summary>
+            DTO za potvrdu kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacConfirmationDto.KupacID">
+            <summary>
+            Id kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacConfirmationDto.FizPravno">
+            <summary>
+            Da li je kupac fizicko ili pravno lice
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacConfirmationDto.OstvarenaPovrsina">
+            <summary>
+            Ostvarena povrsina kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacConfirmationDto.BrTel1">
+            <summary>
+            Broj telefona kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacConfirmationDto.Email">
+            <summary>
+            Email kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacConfirmationDto.BrojRacuna">
+            <summary>
+            Broj racuna kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.FizPravno">
+            <summary>
+            Fizicko ili pravno lice
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.OstvarenaPovrsina">
+            <summary>
+            Ostvarena povrsina
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.Zabrana">
+            <summary>
+            Da li kupac ima zabranu
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.PocetakZabrane">
+            <summary>
+            Datum pocetka zabrane kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.DuzinaZabrane">
+            <summary>
+            Duzina zabrane kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.PrestanakZabrane">
+            <summary>
+            Datum prestanka zabrane
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.OvlascenoLiceID">
+            <summary>
+            Ovasceno lice kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.PrioritetID">
+            <summary>
+            Prioritet kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.BrTel1">
+            <summary>
+            Broj telefona 1 kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.BrTel2">
+            <summary>
+            Broj telefona 2 kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.AdresaID">
+            <summary>
+            Adresa kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.UplataID">
+            <summary>
+            Uplata kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.Email">
+            <summary>
+            Email kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacCreationDto.BrojRacuna">
+            <summary>
+            Broj racuna kupca
+            </summary>
+        </member>
+        <member name="M:CustomerService1.Models.KupacCreationDto.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Metoda za validaciju, proverava se da li us validno upisani datumi pocetka i kraja zabrane
+            </summary>
+            <param name="validationContext">Kontekst nad kojim se validacija izvrsava</param>
+            <returns>Rezultat validacije</returns>
+        </member>
+        <member name="T:CustomerService1.Models.KupacDto">
+            <summary>
+            DTO za kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacDto.KupacID">
+            <summary>
+            Id kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacDto.FizPravno">
+            <summary>
+            Fizicko ili pravno lice
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacDto.OstvarenaPovrsina">
+            <summary>
+            Ostvarena povrsina kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacDto.BrTel1">
+            <summary>
+            Broj telefona kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacDto.Email">
+            <summary>
+            Email kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.KupacDto.BrojRacuna">
+            <summary>
+            Broj racuna kupca
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.Message.serviceName">
+            <summary>
+            Naziv servisa
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.Message.method">
+            <summary>
+            Metoda
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.Message.information">
+            <summary>
+            Detalji
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.Message.error">
+            <summary>
+            Greska
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.OvlascenoLiceDto.ovlascenoLiceId">
+            <summary>
+            Id ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.OvlascenoLiceDto.ime">
+            <summary>
+            Ime ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.OvlascenoLiceDto.prezime">
+            <summary>
+            Prezime ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.OvlascenoLiceDto.licaZaKojaVrsiLicitaciju">
+            <summary>
+            Lista lica za koje se vrsi licitacija
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.OvlascenoLiceDto.brojTabli">
+            <summary>
+            Lista broja tabli
+            </summary>
+            
+        </member>
+        <member name="P:CustomerService1.Models.Principal.Username">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.Principal.Password">
+            <summary>
+            Lozinka korisnika.
+            </summary>
+        </member>
+        <member name="T:CustomerService1.Models.PrioritetConfirmationDto">
+            <summary>
+            DTO za potvrdu prioriteta
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.PrioritetConfirmationDto.PrioritetID">
+            <summary>
+            Id prioriteta
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.PrioritetConfirmationDto.OpisPrioriteta">
+            <summary>
+            Opis prioriteta
+            </summary>
+        </member>
+        <member name="T:CustomerService1.Models.PrioritetCreationDto">
+            <summary>
+            DTO za kreiranje prioriteta
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.PrioritetCreationDto.OpisPrioriteta">
+            <summary>
+            Opis prioriteta
+            </summary>
+        </member>
+        <member name="T:CustomerService1.Models.PrioritetDto">
+            <summary>
+            DTO za prioritet
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.PrioritetDto.PrioritetID">
+            <summary>
+            Id prioriteta
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.PrioritetDto.OpisPrioriteta">
+            <summary>
+            Opis prioriteta
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.User.Id">
+            <summary>
+            ID korisnika.
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.User.FirstName">
+            <summary>
+            Ime korisnika.
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.User.LastName">
+            <summary>
+            Prezime korisnika.
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.User.UserName">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.User.Email">
+            <summary>
+            Email korisnika.
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.User.Password">
+            <summary>
+            Hash-ovana sifra korisnika.
+            </summary>
+        </member>
+        <member name="P:CustomerService1.Models.User.Salt">
+            <summary>
+            Salt.
+            </summary>
+        </member>
+        <member name="M:CustomerService1.ServiceCalls.ILogerService.CreateMessage(CustomerService1.Models.Message)">
+            <summary>
+            Metoda za kreiranje poruke logeru
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:CustomerService1.ServiceCalls.LoggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:CustomerService1.ServiceCalls.LoggerService.CreateMessage(CustomerService1.Models.Message)">
+            <summary>
+            Kreiranje poruke - metoda
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:CustomerService1.ServiceCalls.UserService.HashPassword(System.String)">
+            <summary>
+            Vrši hash-ovanje korisnicke lozinke
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <returns>Generisan hash i salt</returns>
+        </member>
+        <member name="M:CustomerService1.ServiceCalls.UserService.VerifyPassword(System.String,System.String,System.String)">
+            <summary>
+            Proverava validnost prosleđene lozinke sa prosleđenim hash-om
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <param name="savedHash">Sacuvan hash</param>
+            <param name="savedSalt">Sacuvan salt</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

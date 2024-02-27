@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AdresaService</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:AdresaService.Controllers.AdresaController.#ctor(AdresaService.Repositories.IAdresaRepository,Microsoft.AspNetCore.Routing.LinkGenerator,AutoMapper.IMapper,AdresaService.ServiceCalls.ILoggerService)" -->
+        <member name="M:AdresaService.Controllers.AuthController.Authenticate(AdresaService.DtoModels.Principal)">
+            <summary>
+            Sluzi za autentifikaciju korisnika
+            </summary>
+            <param name="principal">Model sa podacima na osnovu kojih se vrši autentifikacija</param>
+            <returns></returns>
+        </member>
+        <member name="P:AdresaService.DtoModels.Message.ServiceName">
+            <summary>
+            Naziv servisa
+            </summary>
+        </member>
+        <member name="P:AdresaService.DtoModels.Message.Method">
+            <summary>
+            Metoda
+            </summary>
+        </member>
+        <member name="P:AdresaService.DtoModels.Message.Information">
+            <summary>
+            Detalji
+            </summary>
+        </member>
+        <member name="P:AdresaService.DtoModels.Message.Error">
+            <summary>
+            Greska
+            </summary>
+        </member>
+        <member name="P:AdresaService.DtoModels.Principal.Username">
+            <summary>
+            Korisničko ime
+            </summary>
+        </member>
+        <member name="P:AdresaService.DtoModels.Principal.Password">
+            <summary>
+            Korisnička lozinka
+            </summary>
+        </member>
+        <member name="T:AdresaService.Entities.User">
+            <summary>
+            Predstavlja model korisnika
+            </summary>
+        </member>
+        <member name="P:AdresaService.Entities.User.Id">
+            <summary>
+            Id korisnika
+            </summary>
+        </member>
+        <member name="P:AdresaService.Entities.User.FirstName">
+            <summary>
+            Ime korisnika
+            </summary>
+        </member>
+        <member name="P:AdresaService.Entities.User.LastName">
+            <summary>
+            Prezime korisnika
+            </summary>
+        </member>
+        <member name="P:AdresaService.Entities.User.UserName">
+            <summary>
+            Korisničko ime
+            </summary>
+        </member>
+        <member name="P:AdresaService.Entities.User.Email">
+            <summary>
+            Email korisnika
+            </summary>
+        </member>
+        <member name="P:AdresaService.Entities.User.Password">
+            <summary>
+            Hash-ovana šifra korisnika
+            </summary>
+        </member>
+        <member name="P:AdresaService.Entities.User.Salt">
+            <summary>
+            Salt
+            </summary>
+        </member>
+        <member name="T:AdresaService.Migrations.migracije">
+            <inheritdoc />
+        </member>
+        <member name="M:AdresaService.Migrations.migracije.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AdresaService.Migrations.migracije.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AdresaService.Migrations.migracije.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AdresaService.ServiceCalls.ILoggerService.CreateMessage(AdresaService.DtoModels.Message)">
+            <summary>
+            Metoda za kreiranje poruke logeru
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:AdresaService.ServiceCalls.LoggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:AdresaService.ServiceCalls.LoggerService.CreateMessage(AdresaService.DtoModels.Message)">
+            <summary>
+            Kreiranje poruke - metoda
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:AdresaService.Services.UserMockRepository.FillData">
+            <summary>
+            Metoda koja upisuje testne podatke
+            </summary>
+        </member>
+        <member name="M:AdresaService.Services.UserMockRepository.UserWithCredentialsExists(System.String,System.String)">
+            <summary>
+            Proverava da li postoji korisnik sa prosleđenim kredencijalima
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdresaService.Services.UserMockRepository.HashPassword(System.String)">
+            <summary>
+            Vrši hash-ovanje korisničke lozinke
+            </summary>
+            <param name="password">Korisnička lozinka</param>
+            <returns>Generisan hash i salt</returns>
+        </member>
+        <member name="M:AdresaService.Services.UserMockRepository.VerifyPassword(System.String,System.String,System.String)">
+            <summary>
+            Proverava validnost prosleđene lozinke sa prosleđenim hash-om
+            </summary>
+            <param name="password">Korisnička lozinka</param>
+            <param name="savedHash">Sačuvan hash</param>
+            <param name="savedSalt">Sačuvan salt</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

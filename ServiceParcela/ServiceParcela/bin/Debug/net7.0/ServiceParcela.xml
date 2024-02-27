@@ -1,0 +1,2616 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServiceParcela</name>
+    </assembly>
+    <members>
+        <member name="M:ServiceParcela.Controllers.AuthController.Authenticate(ServiceParcela.DtoModels.Principal)">
+            <summary>
+            Sluzi za autentifikaciju korisnika
+            </summary>
+            <param name="principal">Model sa podacima na osnovu kojih se vrši autentifikacija</param>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceParcela.Controllers.DeoParceleController.#ctor(ServiceParcela.Repositories.IDeoParceleRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.DeoParceleController.getAllDeoParcele">
+            <summary>
+            Vraca sve delove parcele.
+            </summary>
+            <returns>Lista delova parcele.</returns>
+            <response code="200">Vraca listu delova parcele.</response>
+            <response code="204">Nije pronadjen ni jedan deo parcele.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.DeoParceleController.getDeoParceleByID(System.Guid)">
+            <summary>
+            Vraca jedan deo parcele na osnovu ID-ja.
+            </summary>
+            // <param name="deoParceleId">ID dela parcele</param>
+            <returns>Trazeni deo parcele</returns>
+            <response code="200">Trazeni deo parcele je uspesno pronadjen.</response>
+            <response code="404">Trazeni deo parcele nije pronadjen.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.DeoParceleController.deleteDeoParcele(System.Guid)">
+            <summary>
+            Brise deo parcele.
+            </summary>
+            <param name="deoParceleId">ID dela parcele</param>
+            <response code="204">Uspesno izvrseno brisanje dela parcele.</response>
+            <response code="404">Nije pronadjen deo parcele sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja dela parcele.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.DeoParceleController.putDeoParcele(ServiceParcela.DtoModels.DeoParceleDto)">
+            <summary>
+            Updatuje deo parcele.
+            </summary>
+            <param name="deoParceleDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjen deo parcele.</returns>
+            <response code="200">Updatovanje dela parcele je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjen deo parcele sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja dela parcele.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.DeoParceleController.postDeoParcele(ServiceParcela.DtoModels.DeoParceleDto)">
+            <summary>
+            Kreira novi deo parcele.
+            </summary>
+            <param name="deoParceleDto">Body koji sadzi deo parcele koji treba da se kreira.</param>
+            <returns> Kreiran deo parcele.</returns>
+            <response code="201">Kreiranje dela parcele je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja dela parcele.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KatastarskaOpstinaController.#ctor(ServiceParcela.Repositories.IKatastarskaOpstinaRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KatastarskaOpstinaController.getAllKatastarskaOpstina">
+            <summary>
+            Vraca sve katastarske opstine.
+            </summary>
+            <returns>Lista katastarskih opstina.</returns>
+            <response code="200">Vraca listu katastarskih opstina.</response>
+            <response code="204">Nije pronadjena ni jedna katastarskih opstina.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KatastarskaOpstinaController.getKatastarskaOpstinaByID(System.Guid)">
+            <summary>
+            Vraca jednu katastarsku opstinu na osnovu ID-ja.
+            </summary>
+            // <param name="katastarskaOpstinaId">ID katastarske opstine</param>
+            <returns>Trazena katastarska opstina</returns>
+            <response code="200">Trazena katastarska opstina je uspesno pronadjena.</response>
+            <response code="404">Trazena katastarska opstina nije pronadjena.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KatastarskaOpstinaController.deleteKatastarskaOpstina(System.Guid)">
+            <summary>
+            Brise katastarsku opstinu.
+            </summary>
+            <param name="katastarskaOpstinaId">ID katastarske opstine</param>
+            <response code="204">Uspesno izvrseno brisanje katastarske opstine.</response>
+            <response code="404">Nije pronadjena katastarska opstina sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja katastarske opstine.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KatastarskaOpstinaController.putKatastarskaOpstina(ServiceParcela.DtoModels.KatastarskaOpstinaDto)">
+            <summary>
+            Updatuje katastarsku opstinu.
+            </summary>
+            <param name="katastarskaOpstinaDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjenu katastarsku opstinu.</returns>
+            <response code="200">Updatovanje katastarske opstine je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjena katastarska opstina sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja katastarske opstine.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KatastarskaOpstinaController.postKatastarskaOpstina(ServiceParcela.DtoModels.KatastarskaOpstinaDto)">
+            <summary>
+            Kreira novu katastarsku opstinu.
+            </summary>
+            <param name="katastarskaOpstinaDto">Body koji sadzi katastarsku opstinu koja treba da se kreira.</param>
+            <returns> Kreirana katastarska opstina.</returns>
+            <response code="201">Kreiranje katastarske opstine je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja katastarske opstine.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KlasaController.#ctor(ServiceParcela.Repositories.IKlasaRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KlasaController.getAllKlasa">
+            <summary>
+            Vraca sve klase.
+            </summary>
+            <returns>Lista klasa.</returns>
+            <response code="200">Vraca listu klasa.</response>
+            <response code="204">Nije pronadjena ni jedna klasa.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KlasaController.getKlasaByID(System.Guid)">
+            <summary>
+            Vraca jednu klasu na osnovu ID-ja.
+            </summary>
+            // <param name="klasaId">ID klase</param>
+            <returns>Trazena klasa</returns>
+            <response code="200">Trazena klasa je uspesno pronadjena.</response>
+            <response code="404">Trazena klasa nije pronadjena.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KlasaController.deleteKlasa(System.Guid)">
+            <summary>
+            Brise klasu.
+            </summary>
+            <param name="klasaId">ID klase</param>
+            <response code="204">Uspesno izvrseno brisanje klase.</response>
+            <response code="404">Nije pronadjena klasa sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja klase.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KlasaController.putKlasa(ServiceParcela.DtoModels.KlasaDto)">
+            <summary>
+            Updatuje klasu.
+            </summary>
+            <param name="klasaDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjenu klasu.</returns>
+            <response code="200">Updatovanje klase je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjena klasa sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja klase.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KlasaController.postKlasa(ServiceParcela.DtoModels.KlasaDto)">
+            <summary>
+            Kreira novu klasu.
+            </summary>
+            <param name="klasaDto">Body koji sadzi klasu koja treba da se kreira.</param>
+            <returns> Kreirana klasa.</returns>
+            <response code="201">Kreiranje klase je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja klase.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KulturaController.#ctor(ServiceParcela.Repositories.IKulturaRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KulturaController.getAllKultura">
+            <summary>
+            Vraca sve kulture.
+            </summary>
+            <returns>Lista kultura.</returns>
+            <response code="200">Vraca listu kultura.</response>
+            <response code="204">Nije pronadjena ni jedna kultura.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KulturaController.getKulturaByID(System.Guid)">
+            <summary>
+            Vraca jednu kulturu na osnovu ID-ja.
+            </summary>
+            // <param name="kulturaId">ID kulture</param>
+            <returns>Trazena kultura</returns>
+            <response code="200">Trazena kultura je uspesno pronadjena.</response>
+            <response code="404">Trazena kultura nije pronadjena.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KulturaController.deleteKultura(System.Guid)">
+            <summary>
+            Brise kulturu.
+            </summary>
+            <param name="kulturaId">ID kulture</param>
+            <response code="204">Uspesno izvrseno brisanje kulture.</response>
+            <response code="404">Nije pronadjena kultura sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja kulture.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KulturaController.putKultura(ServiceParcela.DtoModels.KulturaDto)">
+            <summary>
+            Updatuje kulturu.
+            </summary>
+            <param name="kulturaDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjenu kulturu.</returns>
+            <response code="200">Updatovanje kulture je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjena kultura sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja kulture.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.KulturaController.postKultura(ServiceParcela.DtoModels.KulturaDto)">
+            <summary>
+            Kreira novu kulturu.
+            </summary>
+            <param name="kulturaDto">Body koji sadzi kulturu koja treba da se kreira.</param>
+            <returns> Kreirana kultura.</returns>
+            <response code="201">Kreiranje kulture je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja kulture.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OblikSvojineController.#ctor(ServiceParcela.Repositories.IOblikSvojineRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OblikSvojineController.getAllOblikSvojine(AutoMapper.IMapper)">
+            <summary>
+            Vraca sve oblike svojine.
+            </summary>
+            <returns>Lista oblika svojine.</returns>
+            <response code="200">Vraca listu oblika svojine..</response>
+            <response code="204">Nije pronadjen ni oblik svojine.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OblikSvojineController.getOblikSvojineByID(System.Guid)">
+            <summary>
+            Vraca jedan oblik svojine na osnovu ID-ja.
+            </summary>
+            // <param name="oblikSvojineId">ID oblika svojine</param>
+            <returns>Trazeni oblik svojine</returns>
+            <response code="200">Trazeni oblik svojine je uspesno pronadjen.</response>
+            <response code="404">Trazeni oblik svojine nije pronadjen.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OblikSvojineController.deleteOblikSvojine(System.Guid)">
+            <summary>
+            Brise oblik svojine.
+            </summary>
+            <param name="oblikSvojineId">ID oblika svojine</param>
+            <response code="204">Uspesno izvrseno brisanje oblika svojine.</response>
+            <response code="404">Nije pronadjen oblik svojine sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja oblika svojine.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OblikSvojineController.putOblikSvojine(ServiceParcela.DtoModels.OblikSvojineDto)">
+            <summary>
+            Updatuje oblik svojine.
+            </summary>
+            <param name="oblikSvojineDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjen oblik svojine.</returns>
+            <response code="200">Updatovanje oblika svojine je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjen oblik svojine sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja oblika svojine.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OblikSvojineController.postOblikSvojine(ServiceParcela.DtoModels.OblikSvojineDto)">
+            <summary>
+            Kreira novi oblik svojine.
+            </summary>
+            <param name="oblikSvojineDto">Body koji sadzi oblik svojine koji treba da se kreira.</param>
+            <returns> Kreiran oblik svojine.</returns>
+            <response code="201">Kreiranje oblika svojine je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja oblika svojine.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ObradivostController.#ctor(ServiceParcela.Repositories.IObradivostRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ObradivostController.getAllObradivost">
+            <summary>
+            Vraca sve obradivosti.
+            </summary>
+            <returns>Lista obradivosti.</returns>
+            <response code="200">Vraca listu obradivosti.</response>
+            <response code="204">Nije pronadjena ni jedna obradivost.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ObradivostController.getObradivostByID(System.Guid)">
+            <summary>
+            Vraca jednu obradivost na osnovu ID-ja.
+            </summary>
+            // <param name="obradivostId">ID obradivosti</param>
+            <returns>Trazena obradivost</returns>
+            <response code="200">Trazena obradivost je uspesno pronadjena.</response>
+            <response code="404">Trazena obradivost nije pronadjena.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ObradivostController.deleteObradivost(System.Guid)">
+            <summary>
+            Brise obradivost.
+            </summary>
+            <param name="obradivostId">ID obradivosti</param>
+            <response code="204">Uspesno izvrseno brisanje obradivosti.</response>
+            <response code="404">Nije pronadjena obradivost sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja obradivosti.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ObradivostController.putObradivost(ServiceParcela.DtoModels.ObradivostDto)">
+            <summary>
+            Updatuje obradivost.
+            </summary>
+            <param name="obradivostDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjenu obradivost.</returns>
+            <response code="200">Updatovanje obradivosti je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjena obradivost sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja obradivosti.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ObradivostController.postObradivost(ServiceParcela.DtoModels.ObradivostDto)">
+            <summary>
+            Kreira novu obradivost.
+            </summary>
+            <param name="obradivostDto">Body koji sadzi obradivost koja treba da se kreira.</param>
+            <returns> Kreirana obradivost.</returns>
+            <response code="201">Kreiranje obradivosti je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja obradivosti.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OdvodnjavanjeController.#ctor(ServiceParcela.Repositories.IOdvodnjavanjeRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OdvodnjavanjeController.getAllOdvodnjavanje">
+            <summary>
+            Vraca sva odvodnjavanja.
+            </summary>
+            <returns>Lista odvodnjavanja.</returns>
+            <response code="200">Vraca listu odvodnjavanja.</response>
+            <response code="204">Nije pronadjeno ni jedno odvodnjavanje.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OdvodnjavanjeController.getOdvodnjavanjeByID(System.Guid)">
+            <summary>
+            Vraca jedno odvodnjavanje na osnovu ID-ja.
+            </summary>
+            // <param name="odvodnjavanjeId">ID odvodnjavanja</param>
+            <returns>Trazeno odvodnjavanje</returns>
+            <response code="200">Trazeno odvodnjavanje je uspesno pronadjeno.</response>
+            <response code="404">Trazeno odvodnjavanje nije pronadjeno.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OdvodnjavanjeController.deleteOdvodnjavanje(System.Guid)">
+            <summary>
+            Brise odvodnjavanje.
+            </summary>
+            <param name="odvodnjavanjeId">ID odvodnjavanja</param>
+            <response code="204">Uspesno izvrseno brisanje odvodnjavanja.</response>
+            <response code="404">Nije pronadjeno odvodnjavanje sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja odvodnjavanja.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OdvodnjavanjeController.putOdvodnjavanje(ServiceParcela.DtoModels.OdvodnjavanjeDto)">
+            <summary>
+            Updatuje odvodnjavanje.
+            </summary>
+            <param name="odvodnjavanjeDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjeno odvodnjavanje.</returns>
+            <response code="200">Updatovanje odvodnjavanja je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjeno odvodnjavanje sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja odvodnjavanja.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.OdvodnjavanjeController.postOdvodnjavanje(ServiceParcela.DtoModels.OdvodnjavanjeDto)">
+            <summary>
+            Kreira novo odvodnjavanje.
+            </summary>
+            <param name="odvodnjavanjeDto">Body koji sadzi odvodnjavanje koje treba da se kreira.</param>
+            <returns> Kreirano odvodnjavanje.</returns>
+            <response code="201">Kreiranje odvodnjavanja je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja odvodnjavanja.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ParcelaController.#ctor(ServiceParcela.Repositories.IParcelaRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.IKupacService,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ParcelaController.getAllParcela">
+            <summary>
+            Vraca sve parcele.
+            </summary>
+            <returns> Lista parcela</returns>
+            <response code="200">Vraca listu parcela</response>
+            <response code="204">Nije pronadjena ni jedna parcela.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ParcelaController.getParcelaByID(System.Guid)">
+            <summary>
+            Vraca jednu parcelu na osnovu ID-ja.
+            </summary>
+            // <param name="parcelaId">ID parcele</param>
+            <returns>Trazena parcela</returns>
+            <response code="200">Trazena parcela je uspesno pronadjena.</response>
+            <response code="404">Trazena parcela nije pronadjena.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ParcelaController.deleteParcela(System.Guid)">
+            <summary>
+            Brise parcelu.
+            </summary>
+            <param name="parcelaId">ID parcele</param>
+            <response code="204">Uspesno izvrseno brisanje parcele.</response>
+            <response code="404">Nije pronadjena parcela sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja parcele.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ParcelaController.putParcela(ServiceParcela.DtoModels.ParcelaDto)">
+            <summary>
+            Updatuje parcelu.
+            </summary>
+            <param name="parcelaDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjenu parcelu.</returns>
+            <response code="200">Updatovanje parcele je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjena parcela sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja parcele.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ParcelaController.postParcela(ServiceParcela.DtoModels.ParcelaDto)">
+            <summary>
+            Kreira novu parcelu.
+            </summary>
+            <param name="parcelaDto">Body koji sadzi parcelu koja treba da se kreira.</param>
+            <returns> Kreirana parcela.</returns>
+            <response code="201">Kreiranje parcele je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja parcele.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ZasticenaZonaController.#ctor(ServiceParcela.Repositories.IZasticenaZonaRepository,AutoMapper.IMapper,ServiceParcela.ServiceCalls.ILogerService)">
+            <summary>
+            Mapiranje 
+            </summary>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ZasticenaZonaController.getAllZasticenaZona">
+            <summary>
+            Vraca sve zasticene zone.
+            </summary>
+            <returns>Lista zasticenih zona.</returns>
+            <response code="200">Vraca listu zasticenih zona.</response>
+            <response code="204">Nije pronadjena ni jedna zasticena zona.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ZasticenaZonaController.getZasticenaZonaByID(System.Guid)">
+            <summary>
+            Vraca jednu zasticenu zonu na osnovu ID-ja.
+            </summary>
+            // <param name="zasticenaZonaId">ID zasticene zone</param>
+            <returns>Trazena zasticena zona</returns>
+            <response code="200">Trazena zasticena zona je uspesno pronadjena.</response>
+            <response code="404">Trazena zasticena zona nije pronadjena.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ZasticenaZonaController.deleteZasticenaZona(System.Guid)">
+            <summary>
+            Brise zasticenu zonu.
+            </summary>
+            <param name="zasticenaZonaId">ID zasticene zone</param>
+            <response code="204">Uspesno izvrseno brisanje.</response>
+            <response code="404">Nije pronadjena zasticena zona sa datim id-jem.</response>
+            <response code="500">Desila se greska prilikom brisanja zasticene zone.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ZasticenaZonaController.putZasticenaZona(ServiceParcela.DtoModels.ZasticenaZonaDto)">
+            <summary>
+            Updatuje zasticenu zonu.
+            </summary>
+            <param name="zasticenaZonaDto">Body koji sadzi podatke koji treba da se izmene.</param>
+            <returns> Vraca izmenjenu zasticenu zonu.</returns>
+            <response code="200">Updatovanje zasticene zone je uspesno izvrseno.</response>
+            <response code="404">Nije pronadjena zasticena zona sa prosledjenim id-jem.</response>
+            <response code="500">Desila se greska prilikom updatovanja zasticene zone.</response>
+        </member>
+        <member name="M:ServiceParcela.Controllers.ZasticenaZonaController.postZasticenaZona(ServiceParcela.DtoModels.ZasticenaZonaDto)">
+            <summary>
+            Kreira novu zasticenu zonu.
+            </summary>
+            <param name="zasticenaZonaDto">Body koji sadzi zasticenu zonu koja treba da se kreira.</param>
+            <returns> Kreirana zasticena zona.</returns>
+            <response code="201">Kreiranje zasticene zone je uspesno izvrseno.</response>
+            <response code="500">Desila se greska prilikom kreiranja zasticene zone.</response>
+        </member>
+        <member name="T:ServiceParcela.DtoModels.AdresaDto">
+            <summary>
+            AdresaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.AdresaDto.adresaID">
+            <summary>
+            Id adrese
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.AdresaDto.ulica">
+            <summary>
+            Naziv ulice
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.AdresaDto.mesto">
+            <summary>
+            Naziv mesta
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.AdresaDto.postanskiBroj">
+            <summary>
+            Postanski broj
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.DeoParceleDto">
+            <summary>
+            DeoParceleDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.DeoParceleDto.deoParceleID">
+            <summary>
+            Id dela parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.DeoParceleDto.parcelaID">
+            <summary>
+            Id parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.DeoParceleDto.idealniDeoParcele">
+            <summary>
+            Vrednost idealnog dela parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.DeoParceleDto.stvarniDeoParcele">
+            <summary>
+            Vrednost stvarnog dela parcele 
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.DrzavaDto">
+            <summary>
+            DrzavaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.DrzavaDto.drzavaID">
+            <summary>
+            Id drzave
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.DrzavaDto.naziv">
+            <summary>
+            Naziv drzave
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.FizickoLiceDto">
+            <summary>
+            FizickoLiceDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.liceID">
+            <summary>
+            Id lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.naziv">
+            <summary>
+            Naziv fizickog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.maticniBroj">
+            <summary>
+            Maticni broj fizickog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.adresa">
+            <summary>
+            Adresa fizickog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.brojTelefona1">
+            <summary>
+            Prvi broj telfona fl
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.brojTelefona2">
+            <summary>
+            Drugi broj telefona fl
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.faks">
+            <summary>
+            Faks fizickog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.FizickoLiceDto.email">
+            <summary>
+            Email fizickog lica
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.KatastarskaOpstinaDto">
+            <summary>
+            KatastarskaOpstinaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KatastarskaOpstinaDto.katastarskaOpstinaID">
+            <summary>
+            Id katastarske opstine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KatastarskaOpstinaDto.nazivKatastarskeOpstine">
+            <summary>
+            Naziv katstarske opstine
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.KlasaDto">
+            <summary>
+            KlasaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KlasaDto.klasaID">
+            <summary>
+            Id klase
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KlasaDto.nazivKlase">
+            <summary>
+            Naziv klase
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.KulturaDto">
+            <summary>
+            KulturaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KulturaDto.kulturaID">
+            <summary>
+            Id kulture
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KulturaDto.nazivKulture">
+            <summary>
+            Naziv kulture
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.KupacDto">
+            <summary>
+            KupacDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.kupacID">
+            <summary>
+            Id kupca
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.fizickoPravnoLice">
+            <summary>
+            Fizicko ili pravno lice
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.osvarenaPovrsina">
+            <summary>
+            Ostvarena povrsina
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.zabrana">
+            <summary>
+            Postojanje zabrane kupca
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.pocetakZabrane">
+            <summary>
+            Datum pocetka zabrane
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.duzinaZabrane">
+            <summary>
+            Trajanje zabrane
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.prestanakZabrane">
+            <summary>
+            Datum prestanka zabrane
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.ovlascenoLiceId">
+            <summary>
+            Id ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.prioritetId">
+            <summary>
+            Id prioriteta
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.lice">
+            <summary>
+            Naziv lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.brTel1">
+            <summary>
+            Prvi broj telefona kupca
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.brTel2">
+            <summary>
+            Drugi broj telefona kupca
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.adresaId">
+            <summary>
+            Id adrese
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.uplataId">
+            <summary>
+            Id uplate
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.email">
+            <summary>
+            Email kupca
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.KupacDto.brRacuna">
+            <summary>
+            Broj racuna kupca
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.Message">
+            <summary>
+            Message
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.Message.serviceName">
+            <summary>
+            Naziv servisa
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.Message.method">
+            <summary>
+            Metoda
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.Message.information">
+            <summary>
+            Detalji
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.Message.error">
+            <summary>
+            Greska
+            </summary>
+        </member>
+        <member name="T:ServiceParcela.DtoModels.OblikSvojineDto">
+            <summary>
+            OblikSvojineDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.OblikSvojineDto.oblikSvojineID">
+            <summary>
+            Id oblika svojine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.OblikSvojineDto.nazivOblikaSvojine">
+            <summary>
+            Naziv oblika svojine
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.ObradivostDto">
+            <summary>
+            ObradivostDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ObradivostDto.obradivostID">
+            <summary>
+            Id obradivosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ObradivostDto.nazivObradivosti">
+            <summary>
+            Naziv obradivosti
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.OdvodnjavanjeDto">
+            <summary>
+            OdvodnjavanjeDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.OdvodnjavanjeDto.odvodnjavanjeID">
+            <summary>
+            Id odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.OdvodnjavanjeDto.nazivOdvodnjavanja">
+            <summary>
+            Naziv odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.ParcelaDto">
+            <summary>
+            ParcelaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.parcelaID">
+            <summary>
+            Id parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.korisnikParceleID">
+            <summary>
+            Id korisnika parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.povrsina">
+            <summary>
+            Povrsina parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.brojParcele">
+            <summary>
+            Broj parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.katastarskaOpstinaID">
+            <summary>
+            Id katastarske opstine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.brojListaNepokretnosti">
+            <summary>
+            Broj lista nepokretnosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.kulturaID">
+            <summary>
+            Id kulture
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.klasaID">
+            <summary>
+            Id klase
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.obradivostID">
+            <summary>
+            Id obradivosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.zasticenaZonaID">
+            <summary>
+            Id zasticene zone
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.oblikSvojineID">
+            <summary>
+            Id oblika svojine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.odvodnjavanjeID">
+            <summary>
+            Id odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.obradivostStvarnoStanje">
+            <summary>
+            Stvarno stanje obradivosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.kulturaStvarnoStanje">
+            <summary>
+            Stvarno stanje kulture
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.klasaStvarnoStanje">
+            <summary>
+            Stvarno stanje klase
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.zasticenaZonaStvarnoStanje">
+            <summary>
+            Stvarno stanje zasticene zone
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ParcelaDto.odvodnjavanjeStvarnoStanje">
+            <summary>
+            Stvarno stanje odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.PravnoLiceDto">
+            <summary>
+            PravnoLiceDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.liceID">
+            <summary>
+            Id lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.naziv">
+            <summary>
+            Naziv pravnog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.maticniBroj">
+            <summary>
+            Maticni broj pravnog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.adresa">
+            <summary>
+            AdresaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.brojTelefona1">
+            <summary>
+            Prvi broj telefona
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.brojTelefona2">
+            <summary>
+            Drugi broj telefona
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.faks">
+            <summary>
+            Faks pravnog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.email">
+            <summary>
+            Email pravnog lica
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.PravnoLiceDto.brojRacuna">
+            <summary>
+            Broj racuna pravnog lica
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.DtoModels.Principal">
+            <summary>
+            PrincipalDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.Principal.Username">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.Principal.Password">
+            <summary>
+            Lozinka korisnika.
+            </summary>
+        </member>
+        <member name="T:ServiceParcela.DtoModels.User">
+            <summary>
+            UserDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.User.Id">
+            <summary>
+            ID korisnika.
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.User.FirstName">
+            <summary>
+            Ime korisnika.
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.User.LastName">
+            <summary>
+            Prezime korisnika.
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.User.UserName">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.User.Email">
+            <summary>
+            Email korisnika.
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.User.Password">
+            <summary>
+            Hash-ovana sifra korisnika.
+            </summary>
+        </member>
+        <member name="P:ServiceParcela.DtoModels.User.Salt">
+            <summary>
+            Salt.
+            </summary>
+        </member>
+        <member name="T:ServiceParcela.DtoModels.ZasticenaZonaDto">
+            <summary>
+            ZasticenaZonaDto
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ZasticenaZonaDto.zasticenaZonaID">
+            <summary>
+            Id zasticene zone
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.DtoModels.ZasticenaZonaDto.nazivZasticeneZone">
+            <summary>
+            Naziv zasticene zone
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.DeoParcele">
+            <summary>
+             Deo parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.DeoParcele.deoParceleID">
+            <summary>
+            Id dela parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.DeoParcele.parcelaID">
+            <summary>
+            Id parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.DeoParcele.idealniDeoParcele">
+            <summary>
+            Idealni deo parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.DeoParcele.stvarniDeoParcele">
+            <summary>
+            Stavrni deo parcele
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.KatastarskaOpstina">
+            <summary>
+            Katastarska osptina
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.KatastarskaOpstina.katastarskaOpstinaID">
+            <summary>
+            Id katastarske opstine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.KatastarskaOpstina.nazivKatastarskeOpstine">
+            <summary>
+            Naziv katastarske opstine
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.Klasa">
+            <summary>
+            Klasa
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Klasa.klasaID">
+            <summary>
+            Id klase
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Klasa.nazivKlase">
+            <summary>
+            Naziv klase
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.Kultura">
+            <summary>
+            Kultura
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Kultura.kulturaID">
+            <summary>
+            Id kulture
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Kultura.nazivKulture">
+            <summary>
+            Naziv kulture
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.OblikSvojine">
+            <summary>
+            Oblik svojine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.OblikSvojine.oblikSvojineID">
+            <summary>
+            Id oblika svojine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.OblikSvojine.nazivOblikaSvojine">
+            <summary>
+            Naziv oblika svojine
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.Obradivost">
+            <summary>
+            Obradivost
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Obradivost.obradivostID">
+            <summary>
+            Id obradivosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Obradivost.nazivObradivosti">
+            <summary>
+            Naziv obradivosti
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.Odvodnjavanje">
+            <summary>
+            Odvodnjavanje
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Odvodnjavanje.odvodnjavanjeID">
+            <summary>
+            Id odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Odvodnjavanje.nazivOdvodnjavanja">
+            <summary>
+            Naziv odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.Parcela">
+            <summary>
+            Parcela
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.parcelaID">
+            <summary>
+            Id parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.korisnikParceleID">
+            <summary>
+            Id korisnika parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.povrsina">
+            <summary>
+            Povrsina
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.brojParcele">
+            <summary>
+            Broj parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.katastarskaOpstinaID">
+            <summary>
+            Id katastarske opstine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.brojListaNepokretnosti">
+            <summary>
+            Broj lista nepokretnosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.kulturaID">
+            <summary>
+            Id kulture
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.klasaID">
+            <summary>
+            Id klase
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.obradivostID">
+            <summary>
+            Id obradivosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.zasticenaZonaID">
+            <summary>
+            Id zasticene zone
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.oblikSvojineID">
+            <summary>
+            Id oblika svojine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.odvodnjavanjeID">
+            <summary>
+            Id odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.obradivostStvarnoStanje">
+            <summary>
+            Stvarno stanje obradivosti
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.kulturaStvarnoStanje">
+            <summary>
+            Stvarno stanje kulture
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.klasaStvarnoStanje">
+            <summary>
+            Stvarno stanje klase
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.zasticenaZonaStvarnoStanje">
+            <summary>
+            Stvarno stanje zasticene zone
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.odvodnjavanjeStvarnoStanje">
+            <summary>
+            Stvarno stanje odvodnjavanja
+            </summary>
+            
+        </member>
+        <member name="F:ServiceParcela.Entities.Parcela.ListaDelova">
+            <summary>
+            Lista delova parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.Parcela.kupac">
+            <summary>
+            KupacDto
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.ParcelaContex">
+            <summary>
+            ParcelaContext
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Entities.ParcelaContex.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">
+            <summary>
+            Context
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.parcele">
+            <summary>
+            Parcela
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.deloviParcele">
+            <summary>
+            Deo parcele
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.katastarskeOpstine">
+            <summary>
+            Katastarska opstina
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.klase">
+            <summary>
+            Klasa
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.kulture">
+            <summary>
+            Kultura
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.obliciSvojine">
+            <summary>
+            Oblik svojine
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.obradivosti">
+            <summary>
+            Obradivost
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.odvodnjavanja">
+            <summary>
+            Odvodnjavanje
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ParcelaContex.zasticeneZone">
+            <summary>
+            Zasticena zona
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Entities.ParcelaContex.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Podaci
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Entities.ZasticenaZona">
+            <summary>
+            Zasticena zona
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ZasticenaZona.zasticenaZonaID">
+            <summary>
+            Id zasticene zone
+            </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Entities.ZasticenaZona.nazivZasticeneZone">
+            <summary>
+            Naziv zasticene zone
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Helper.AuthHelper">
+            <summary>
+            AuthHelper
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Helper.AuthHelper.#ctor(Microsoft.Extensions.Configuration.IConfiguration,ServiceParcela.Repositories.IUserRepository)">
+            <summary>
+            AuthHelper
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Helper.AuthHelper.authenticatePrincipal(ServiceParcela.DtoModels.Principal)">
+            <summary>
+            authenticatePrincipal
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Helper.AuthHelper.generateJWT(ServiceParcela.DtoModels.Principal)">
+            <summary>
+            generateJWT
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Helper.IAuthHelper">
+             <summary>
+             AuthHelper
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Helper.IAuthHelper.authenticatePrincipal(ServiceParcela.DtoModels.Principal)">
+             <summary>
+             authenticatePrincipal
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Helper.IAuthHelper.generateJWT(ServiceParcela.DtoModels.Principal)">
+             <summary>
+             generateJWT
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Migrations.ParcelaContextMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:ServiceParcela.Migrations.ParcelaContextMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ServiceParcela.Migrations.ParcelaContextMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ServiceParcela.Migrations.ParcelaContextMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ServiceParcela.Profiles.DeoParceleProfile">
+            <summary>
+            DeoParceleProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.DeoParceleProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.KatastarskaOpstinaProfile">
+            <summary>
+            KatastarskaOpstinaProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.KatastarskaOpstinaProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.KlasaProfile">
+            <summary>
+            KlasaProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.KlasaProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.KulturaProfile">
+            <summary>
+            KulturaProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.KulturaProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.OblikSvojineProfile">
+            <summary>
+            OblikSvojineProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.OblikSvojineProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.ObradivostProfile">
+            <summary>
+            ObradivostProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.ObradivostProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.OdvodnjavanjeProfile">
+            <summary>
+            OdvodnjavanjeProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.OdvodnjavanjeProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.ParcelaProfile">
+            <summary>
+            ParcelaProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.ParcelaProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Profiles.ZasticenaZonaProfile">
+            <summary>
+            ZasticenaZonaProfile
+            </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Profiles.ZasticenaZonaProfile.#ctor">
+            <summary>
+            Mapiranje
+            </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Program">
+             <summary>
+             Program
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Program.#ctor">
+             <summary>
+             Program
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Program.Main(System.String[])">
+             <summary>
+             Main
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Program.CreateHostBuilder(System.String[])">
+             <summary>
+             CreateHostBuilder
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IDeoParceleRepository">
+             <summary>
+             IDeoParceleRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IDeoParceleRepository.getAllDeoParcele">
+             <summary>
+             funkcija get all deo parcele
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IDeoParceleRepository.getDeoParceleByID(System.Guid)">
+             <summary>
+             get deo parcele by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IDeoParceleRepository.postDeoParcele(ServiceParcela.Entities.DeoParcele)">
+             <summary>
+             create deo parcele
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IDeoParceleRepository.putDeoParcele(ServiceParcela.Entities.DeoParcele)">
+             <summary>
+             update deo parcele
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IDeoParceleRepository.deleteDeoParcele(System.Guid)">
+             <summary>
+             delete deo parcele
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IDeoParceleRepository.saveChanges">
+             <summary>
+             save deo parcele
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IKatastarskaOpstinaRepository">
+             <summary>
+             IKatastarskaOpstinaRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKatastarskaOpstinaRepository.getAllKatastarskaOpstina">
+             <summary>
+             funkcija get all katastarska opstina
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKatastarskaOpstinaRepository.getKatastarskaOpstinaByID(System.Guid)">
+             <summary>
+             get katastarska opstina by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKatastarskaOpstinaRepository.postKatastarskaOpstina(ServiceParcela.Entities.KatastarskaOpstina)">
+             <summary>
+             create katastarska opstina
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKatastarskaOpstinaRepository.putKatastarskaOpstina(ServiceParcela.Entities.KatastarskaOpstina)">
+             <summary>
+             update katastarska opstina
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKatastarskaOpstinaRepository.deleteKatastarskaOpstina(System.Guid)">
+             <summary>
+             delete katastarska opstina
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKatastarskaOpstinaRepository.saveChanges">
+             <summary>
+             save katastarska opstina
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IKlasaRepository">
+             <summary>
+             IKlasaRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKlasaRepository.getAllKlasa">
+             <summary>
+             funkcija get all klasa
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKlasaRepository.getKlasaByID(System.Guid)">
+             <summary>
+             get klasa by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKlasaRepository.postKlasa(ServiceParcela.Entities.Klasa)">
+             <summary>
+             create klasa
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKlasaRepository.putKlasa(ServiceParcela.Entities.Klasa)">
+             <summary>
+             update klasa
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKlasaRepository.deleteKlasa(System.Guid)">
+             <summary>
+             delete klasa
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKlasaRepository.saveChanges">
+             <summary>
+             save klasa
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IKulturaRepository">
+             <summary>
+             IKulturaRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKulturaRepository.getAllKultura">
+             <summary>
+             funkcija get all kultura
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKulturaRepository.getKulturaByID(System.Guid)">
+             <summary>
+             get kultura by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKulturaRepository.postKultura(ServiceParcela.Entities.Kultura)">
+             <summary>
+             create kultura
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKulturaRepository.putKultura(ServiceParcela.Entities.Kultura)">
+             <summary>
+             update kultura
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKulturaRepository.deleteKultura(System.Guid)">
+             <summary>
+             delete kultura
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IKulturaRepository.saveChanges">
+             <summary>
+             save kultura
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IOblikSvojineRepository">
+             <summary>
+             IOblikSvojineRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOblikSvojineRepository.getAllOblikSvojine">
+             <summary>
+             funkcija get all oblik svojine
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOblikSvojineRepository.getOblikSvojineByID(System.Guid)">
+             <summary>
+             get oblik svojine by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOblikSvojineRepository.postOblikSvojine(ServiceParcela.Entities.OblikSvojine)">
+             <summary>
+             create oblik svojine
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOblikSvojineRepository.putOblikSvojine(ServiceParcela.Entities.OblikSvojine)">
+             <summary>
+             update oblik svojine
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOblikSvojineRepository.deleteOblikSvojine(System.Guid)">
+             <summary>
+             delete oblik svojine
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOblikSvojineRepository.saveChanges">
+             <summary>
+             save oblik svojine
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IObradivostRepository">
+             <summary>
+             IObradivostRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IObradivostRepository.getAllObradivost">
+             <summary>
+             funkcija get all obradivost
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IObradivostRepository.getObradivostByID(System.Guid)">
+             <summary>
+             get obradivost by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IObradivostRepository.postObradivost(ServiceParcela.Entities.Obradivost)">
+             <summary>
+             create obradivost
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IObradivostRepository.putObradivost(ServiceParcela.Entities.Obradivost)">
+             <summary>
+             update obradivost
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IObradivostRepository.deleteObradivost(System.Guid)">
+             <summary>
+             delete obradivost
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IObradivostRepository.saveChanges">
+             <summary>
+             save obradivost
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IOdvodnjavanjeRepository">
+             <summary>
+             IOdvodnjavanjeRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOdvodnjavanjeRepository.getAllOdvodnjavanje">
+             <summary>
+             funkcija get all odvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOdvodnjavanjeRepository.getOdvodnjavanjeByID(System.Guid)">
+             <summary>
+             get odvodnjavanje by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOdvodnjavanjeRepository.postOdvodnjavanje(ServiceParcela.Entities.Odvodnjavanje)">
+             <summary>
+             create odvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOdvodnjavanjeRepository.putOdvodnjavanje(ServiceParcela.Entities.Odvodnjavanje)">
+             <summary>
+             update odvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOdvodnjavanjeRepository.deleteOdvodnjavanje(System.Guid)">
+             <summary>
+             delete odvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IOdvodnjavanjeRepository.saveChanges">
+             <summary>
+             save odvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IParcelaRepository">
+             <summary>
+             IParcelaRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IParcelaRepository.getAllParcela">
+             <summary>
+             funkcija get all parcela
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IParcelaRepository.getParcelaByID(System.Guid)">
+             <summary>
+             get parcela by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IParcelaRepository.postParcela(ServiceParcela.Entities.Parcela)">
+             <summary>
+             create parcela
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IParcelaRepository.putParcela(ServiceParcela.Entities.Parcela)">
+             <summary>
+             update parcela
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IParcelaRepository.deleteParcela(System.Guid)">
+             <summary>
+             delete parcela
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IParcelaRepository.saveChanges">
+             <summary>
+             save parcela
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IUserRepository">
+             <summary>
+             IUserRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IUserRepository.checkIfUserExists(System.String,System.String)">
+             <summary>
+             checkIfUserExists
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Repositories.IZasticenaZonaRepository">
+             <summary>
+             IZasticenaZonaRepository
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IZasticenaZonaRepository.getAllZasticenaZona">
+             <summary>
+             funkcija get all zasticena zona
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IZasticenaZonaRepository.getZasticenaZonaByID(System.Guid)">
+             <summary>
+             get zasticena zona by id
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IZasticenaZonaRepository.postZasticenaZona(ServiceParcela.Entities.ZasticenaZona)">
+             <summary>
+             create zasticena zona
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IZasticenaZonaRepository.putZasticenaZona(ServiceParcela.Entities.ZasticenaZona)">
+             <summary>
+             update zasticena zona
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IZasticenaZonaRepository.deleteZasticenaZona(System.Guid)">
+             <summary>
+             delete zasticena zona
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Repositories.IZasticenaZonaRepository.saveChanges">
+             <summary>
+             save zasticena zona
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.ServiceCalls.IKupacService">
+             <summary>
+             IKupacService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.ServiceCalls.IKupacService.getKupci(System.Guid)">
+             <summary>
+             authenticatePrincipal
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.ServiceCalls.ILogerService">
+             <summary>
+             ILogerService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.ServiceCalls.ILogerService.CreateMessage(ServiceParcela.DtoModels.Message)">
+            <summary>
+            Metoda za kreiranje poruke logeru
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:ServiceParcela.ServiceCalls.KupacService">
+             <summary>
+             KupacService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.ServiceCalls.KupacService.#ctor">
+             <summary>
+             KupacService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.ServiceCalls.KupacService.getKupci(System.Guid)">
+             <summary>
+             getKupci
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.ServiceCalls.LoggerService">
+             <summary>
+             LoggerService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.ServiceCalls.LoggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:ServiceParcela.ServiceCalls.LoggerService.CreateMessage(ServiceParcela.DtoModels.Message)">
+            <summary>
+            Kreiranje poruke - metoda
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:ServiceParcela.Services.DeoParceleService">
+             <summary>
+             DeoParceleService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.DeoParceleService.deoParceles">
+             <summary>
+             DeoParceleService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.DeoParceleService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             DeoParceleService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.DeoParceleService.deleteDeoParcele(System.Guid)">
+             <summary>
+             deleteDeoParcele
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.DeoParceleService.getAllDeoParcele">
+             <summary>
+             getAllDeoParcele
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.DeoParceleService.getDeoParceleByID(System.Guid)">
+             <summary>
+             getDeoParceleByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.DeoParceleService.postDeoParcele(ServiceParcela.Entities.DeoParcele)">
+             <summary>
+             postDeoParcele
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.DeoParceleService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.DeoParceleService.putDeoParcele(ServiceParcela.Entities.DeoParcele)">
+             <summary>
+             putDeoParcele
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.KatastarskaOpstinaService">
+             <summary>
+             KatastarskaOpstinaService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.KatastarskaOpstinaService.katastarskaOpstinas">
+             <summary>
+             KatastarskaOpstinaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KatastarskaOpstinaService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             KatastarskaOpstinaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KatastarskaOpstinaService.deleteKatastarskaOpstina(System.Guid)">
+             <summary>
+             deleteKatastarskaOpstina
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KatastarskaOpstinaService.getAllKatastarskaOpstina">
+             <summary>
+             getAllKatastarskaOpstina
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KatastarskaOpstinaService.getKatastarskaOpstinaByID(System.Guid)">
+             <summary>
+             getKatastarskaOpstinaByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KatastarskaOpstinaService.postKatastarskaOpstina(ServiceParcela.Entities.KatastarskaOpstina)">
+             <summary>
+             postKatastarskaOpstina
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KatastarskaOpstinaService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KatastarskaOpstinaService.putKatastarskaOpstina(ServiceParcela.Entities.KatastarskaOpstina)">
+             <summary>
+             putKatastarskaOpstina
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.KlasaService">
+             <summary>
+             KlasaService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.KlasaService.klasas">
+             <summary>
+             KlasaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KlasaService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             KlasaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KlasaService.deleteKlasa(System.Guid)">
+             <summary>
+             deleteKlasa
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KlasaService.getAllKlasa">
+             <summary>
+             getAllKlasa
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KlasaService.getKlasaByID(System.Guid)">
+             <summary>
+             getKlasaByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KlasaService.postKlasa(ServiceParcela.Entities.Klasa)">
+             <summary>
+             postKlasa
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KlasaService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KlasaService.putKlasa(ServiceParcela.Entities.Klasa)">
+             <summary>
+             putKlasa
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.KulturaService">
+             <summary>
+             KulturaService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.KulturaService.kulturas">
+             <summary>
+             KulturaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KulturaService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             KulturaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KulturaService.deleteKultura(System.Guid)">
+            <summary>
+            deleteKultura
+            </summary>
+                 
+        </member>
+        <member name="M:ServiceParcela.Services.KulturaService.getAllKultura">
+             <summary>
+             getAllKultura
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KulturaService.getKulturaByID(System.Guid)">
+             <summary>
+             getKulturaByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KulturaService.postKultura(ServiceParcela.Entities.Kultura)">
+             <summary>
+             postKultura
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KulturaService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.KulturaService.putKultura(ServiceParcela.Entities.Kultura)">
+             <summary>
+             putKultura
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.OblikSvojineService">
+             <summary>
+             OblikSvojineService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.OblikSvojineService.oblikSvojines">
+             <summary>
+             OblikSvojineService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OblikSvojineService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             OblikSvojineService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OblikSvojineService.deleteOblikSvojine(System.Guid)">
+             <summary>
+             deleteOblikSvojine
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OblikSvojineService.getAllOblikSvojine">
+             <summary>
+             getAllOblikSvojine
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OblikSvojineService.getOblikSvojineByID(System.Guid)">
+             <summary>
+             getOblikSvojineByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OblikSvojineService.postOblikSvojine(ServiceParcela.Entities.OblikSvojine)">
+             <summary>
+             postOblikSvojine
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OblikSvojineService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OblikSvojineService.putOblikSvojine(ServiceParcela.Entities.OblikSvojine)">
+             <summary>
+             putOblikSvojine
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.ObradivostService">
+             <summary>
+             ObradivostService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.ObradivostService.obradivosts">
+             <summary>
+             ObradivostService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ObradivostService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             ObradivostService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ObradivostService.deleteObradivost(System.Guid)">
+             <summary>
+             deleteObradivost
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ObradivostService.getAllObradivost">
+             <summary>
+             getAllObradivost
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ObradivostService.getObradivostByID(System.Guid)">
+             <summary>
+             getObradivostByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ObradivostService.postObradivost(ServiceParcela.Entities.Obradivost)">
+             <summary>
+             postObradivost
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ObradivostService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ObradivostService.putObradivost(ServiceParcela.Entities.Obradivost)">
+             <summary>
+             putObradivost
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.OdvodnjavanjeService">
+             <summary>
+             OdvodnjavanjeService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.OdvodnjavanjeService.odvodnjavanjes">
+             <summary>
+             OdvodnjavanjeService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OdvodnjavanjeService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             OdvodnjavanjeService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OdvodnjavanjeService.deleteOdvodnjavanje(System.Guid)">
+             <summary>
+             deleteOdvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OdvodnjavanjeService.getAllOdvodnjavanje">
+             <summary>
+             getAllOdvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OdvodnjavanjeService.getOdvodnjavanjeByID(System.Guid)">
+             <summary>
+             getOdvodnjavanjeByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OdvodnjavanjeService.postOdvodnjavanje(ServiceParcela.Entities.Odvodnjavanje)">
+             <summary>
+             postOdvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OdvodnjavanjeService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.OdvodnjavanjeService.putOdvodnjavanje(ServiceParcela.Entities.Odvodnjavanje)">
+             <summary>
+             putOdvodnjavanje
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.ParcelaService">
+             <summary>
+             ParcelaService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.ParcelaService.parcelas">
+             <summary>
+             ParcelaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ParcelaService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             ParcelaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ParcelaService.deleteParcela(System.Guid)">
+             <summary>
+             deleteParcela
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ParcelaService.getAllParcela">
+             <summary>
+             getAllParcela
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ParcelaService.getParcelaByID(System.Guid)">
+             <summary>
+             getParcelaByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ParcelaService.postParcela(ServiceParcela.Entities.Parcela)">
+             <summary>
+             postParcela
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ParcelaService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ParcelaService.putParcela(ServiceParcela.Entities.Parcela)">
+             <summary>
+             putParcela
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Services.UserService">
+             <summary>
+             UserService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.UserService.Users">
+             <summary>
+             User
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.UserService.#ctor">
+             <summary>
+             FillData
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.UserService.checkIfUserExists(System.String,System.String)">
+             <summary>
+             checkIfUserExists
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.UserService.HashPassword(System.String)">
+            <summary>
+            Vrši hash-ovanje korisnicke lozinke
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <returns>Generisan hash i salt</returns>
+        </member>
+        <member name="M:ServiceParcela.Services.UserService.VerifyPassword(System.String,System.String,System.String)">
+            <summary>
+            Proverava validnost prosleđene lozinke sa prosleđenim hash-om
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <param name="savedHash">Sacuvan hash</param>
+            <param name="savedSalt">Sacuvan salt</param>
+            <returns></returns>
+        </member>
+        <member name="T:ServiceParcela.Services.ZasticenaZonaService">
+             <summary>
+             ZasticenaZonaService
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Services.ZasticenaZonaService.zasticenaZonas">
+             <summary>
+             ZasticenaZonaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ZasticenaZonaService.#ctor(AutoMapper.IMapper,ServiceParcela.Entities.ParcelaContex)">
+             <summary>
+             ZasticenaZonaService
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ZasticenaZonaService.deleteZasticenaZona(System.Guid)">
+             <summary>
+             deleteZasticenaZona
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ZasticenaZonaService.getAllZasticenaZona">
+             <summary>
+             getAllZasticenaZona
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ZasticenaZonaService.getZasticenaZonaByID(System.Guid)">
+             <summary>
+             getZasticenaZonaByID
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ZasticenaZonaService.postZasticenaZona(ServiceParcela.Entities.ZasticenaZona)">
+             <summary>
+             postZasticenaZona
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ZasticenaZonaService.saveChanges">
+             <summary>
+             saveChanges
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Services.ZasticenaZonaService.putZasticenaZona(ServiceParcela.Entities.ZasticenaZona)">
+             <summary>
+             putZasticenaZona
+             </summary>
+            
+        </member>
+        <member name="T:ServiceParcela.Startup">
+             <summary>
+             Startup
+             </summary>
+            
+        </member>
+        <member name="P:ServiceParcela.Startup.Configuration">
+             <summary>
+             Configuration
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+             <summary>
+             Startup
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+             <summary>
+             ConfigureServices
+             </summary>
+            
+        </member>
+        <member name="M:ServiceParcela.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+             <summary>
+             Configure
+             </summary>
+            
+        </member>
+    </members>
+</doc>

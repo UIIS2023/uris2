@@ -1,0 +1,1134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuctionService</name>
+    </assembly>
+    <members>
+        <member name="M:AuctionService.Controllers.JavnoNadmetanjController.getAllJavnaNadmetanja">
+            <summary>
+            Vraca sva javna nadmetanja.
+            </summary>
+            <returns> Lista javnih nadmetanja</returns>
+            <response code="200">Vraca listu javnih nadmetanja</response>
+            <response code="204">Nije pronadjen ni jedno javno nadmetanje</response>
+        </member>
+        <member name="M:AuctionService.Controllers.JavnoNadmetanjController.getJavnoNadmetanjeById(System.Guid)">
+            <summary>
+            Vraca jedno javno nadmetanje na osnovu ID-ja.
+            </summary>
+            // <param name="javnoNadmetanjeId">ID javnog nadmetanja</param>
+            <returns>Trazeno javno nadmetanje</returns>
+            <response code="200">Trazeno javno nadmetanje je uspesno pronadjeno</response>
+            <response code="404">Trazeno javno nadmetanje nije pronadjeno</response>
+        </member>
+        <member name="M:AuctionService.Controllers.JavnoNadmetanjController.deleteJavnoNadmetanje(System.Guid)">
+            <summary>
+            Brise javno nadmetanje.
+            </summary>
+            <param name="javnoNadmetanjeId">ID javnog nadmetanja</param>
+            <response code="204">Uspesno izvrseno brisanje</response>
+            <response code="404">Nije pronadjeno javno nadmetanje sa datim id-jem</response>
+            <response code="500">Desila se greska prilikom brisanja javnog nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.JavnoNadmetanjController.putJavnoNadmetanje(AuctionService.DtoModels.JavnoNadmetanjeUpdateDto)">
+            <summary>
+            Updatuje javno nadmetanje.
+            </summary>
+            <param name="jnDto">Body koji sadzi podatke koji treba da se izmene</param>
+            <returns> Vraca izmenjeno javno nadmetanje</returns>
+            <response code="200">Updatovanje je uspesno izvrseno</response>
+            <response code="404">Nije pronadjeno javno nadmetanje sa prosledjenim id-jem</response>
+            <response code="500">Desila se greska prilikom updatovanja javnog nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.JavnoNadmetanjController.postJavnoNadmetnanje(AuctionService.DtoModels.JavnoNadmetanjeCreationDto)">
+            <summary>
+            Kreira novo javno nadmetanje
+            </summary>
+            <param name="javnoNadmetanjeDto">Body koji sadzi javno nadmetanje koje treba da se kreira</param>
+            <returns> Kreirano javno nadmetanje</returns>
+            <response code="201">Kreiranje jn je uspesno izvrseno</response>
+            <response code="500">Desila se greska prilikom kreiranja javnog nademtanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.LicitacijaController.updateLicitacija(AuctionService.DtoModels.LicitacijaUpdateDto)">
+            <summary>
+            Updatuje licitaciju.
+            </summary>
+            <param name="licitacijaDto">Body koji sadzi podatke koji treba da se izmene</param>
+            <returns> Vraca izmenjenu licitaciju</returns>
+            <response code="200">Updatovanje je uspesno izvrseno</response>
+            <response code="404">Nije pronadjena licitacija sa prosledjenim id-jem</response>
+            <response code="500">Desila se greska prilikom updatovanja licitacije</response>
+        </member>
+        <member name="M:AuctionService.Controllers.LicitacijaController.postLicitacija(AuctionService.DtoModels.LicitacijaCreationDto)">
+            <summary>
+            Kreira novu licitaciju
+            </summary>
+            <param name="licitacijaDto">Body koji sadzi licitaciju koja treba da se kreira</param>
+            <returns> Kreirana licitacija</returns>
+            <response code="201">Kreiranje licitacije je uspesno izvrseno</response>
+            <response code="500">Desila se greska prilikom kreiranja licitacije</response>
+        </member>
+        <member name="M:AuctionService.Controllers.LicitacijaController.getAllLicitacije">
+            <summary>
+            Vraca sve licitacije.
+            </summary>
+            <returns> Lista licitacija</returns>
+            <response code="200">Vraca listu licitacija</response>
+            <response code="204">Nije pronadjen ni jedna licitacija</response>
+        </member>
+        <member name="M:AuctionService.Controllers.LicitacijaController.getLicitacijaById(System.Guid)">
+            <summary>
+            Vraca jednu licitaciju na osnovu ID-ja.
+            </summary>
+            // <param name="licitacijaId">ID javnog nadmetanja</param>
+            <returns>Trazena licitacija</returns>
+            <response code="200">Tazena licitacija je uspesno pronadjena</response>
+            <response code="404">Trazena licitacija nije pronadjena</response>
+        </member>
+        <member name="M:AuctionService.Controllers.LicitacijaController.deleteLicitacija(System.Guid)">
+            <summary>
+            Brise licitaciju.
+            </summary>
+            <param name="licitacijaId">ID licitacije</param>
+            <response code="204">Uspesno izvrseno brisanje</response>
+            <response code="404">Nije pronadjena licitacija sa datim id-jem</response>
+            <response code="500">Desila se greska prilikom brisanja licitacije</response>
+        </member>
+        <member name="M:AuctionService.Controllers.StatusNadmetanjaController.getAllStatusiNadmetanja">
+            <summary>
+            Vraca sve statuse nadmetanja.
+            </summary>
+            <returns>Lista statusa nadmetanja</returns>
+            <response code="200">Vraca listu statusa nadmetanja</response>
+            <response code="204">Nije pronadjen ni jedan status nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.StatusNadmetanjaController.getStatusNadmetanjaById(System.Guid)">
+            <summary>
+            Vraca jednan status nadmetanja na osnovu ID-ja.
+            </summary>
+            // <param name="statusNadmetanjaId">ID javnog nadmetanja</param>
+            <returns>Trazeni status nadmetanja</returns>
+            <response code="200">Tazeni status nadmetanja je uspesno pronadjen</response>
+            <response code="404">Trazeni status nadmetanja nije pronadjen</response>
+        </member>
+        <member name="M:AuctionService.Controllers.StatusNadmetanjaController.deleteStatusNadmetanja(System.Guid)">
+            <summary>
+            Brise status nadmetanja.
+            </summary>
+            <param name="statusNadmetanjaId">ID statusa nadmetanja</param>
+            <response code="204">Uspesno izvrseno brisanje</response>
+            <response code="404">Nije pronadjen status nadmetanja sa datim id-jem</response>
+            <response code="500">Desila se greska prilikom brisanja statusa nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.StatusNadmetanjaController.updateStatusNadmetanja(AuctionService.DtoModels.StatusJavnogNadmetanjaUpdateDto)">
+            <summary>
+            Updatuje status nadmetanja.
+            </summary>
+            <param name="statusNadmetanjaDto">Body koji sadzi podatke koji treba da se izmene</param>
+            <returns> Vraca izmenjen status nadmetanja</returns>
+            <response code="200">Updatovanje je uspesno izvrseno</response>
+            <response code="404">Nije pronadjen status nadmetanja sa prosledjenim id-jem</response>
+            <response code="500">Desila se greska prilikom updatovanja statusa nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.StatusNadmetanjaController.postStatusNadmetanja(AuctionService.DtoModels.StatusNadmetanjaCreationDto)">
+            <summary>
+            Kreira novi status nadmetanja
+            </summary>
+            <param name="statusNadmetanjaDto">Body koji sadzi status nadmetanja koji treba da se kreira</param>
+            <returns> Kreirani status nadmetanja </returns>
+            <response code="201">Kreiranje statusa nadmetanja je uspesno izvrseno</response>
+        </member>
+        <member name="M:AuctionService.Controllers.TipJavnogNadmetanjaController.getAllTipoviNadmetanja">
+            <summary>
+            Vraca sve tipove nadmetanja.
+            </summary>
+            <returns>Lista tipova nadmetanja</returns>
+            <response code="200">Vraca listu tipova nadmetanja</response>
+            <response code="204">Nije pronadjen ni jedan tip nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.TipJavnogNadmetanjaController.geTipJavnogNadmetanjaById(System.Guid)">
+            <summary>
+            Vraca jednan tip nadmetanja na osnovu ID-ja.
+            </summary>
+            // <param name="tipNadmetanjaId">ID javnog nadmetanja</param>
+            <returns>Trazeni tip nadmetanja</returns>
+            <response code="200">Tazeni tip nadmetanja je uspesno pronadjen</response>
+            <response code="404">Trazeni tip nadmetanja nije pronadjen</response>
+        </member>
+        <member name="M:AuctionService.Controllers.TipJavnogNadmetanjaController.deleteTipNadmetanja(System.Guid)">
+            <summary>
+            Brise tip nadmetanja.
+            </summary>
+            <param name="tipNadmetanjaId">ID tipa nadmetanja</param>
+            <response code="204">Uspesno izvrseno brisanje</response>
+            <response code="404">Nije pronadjen tip nadmetanja sa datim id-jem</response>
+            <response code="500">Desila se greska prilikom brisanja tip nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.TipJavnogNadmetanjaController.putTipJavnogNadmetanja(AuctionService.DtoModels.TipJavnogNadmetanjaUpdateDto)">
+            <summary>
+            Updatuje tip nadmetanja.
+            </summary>
+            <param name="tipNadmetanjaDto">Body koji sadzi podatke koji treba da se izmene</param>
+            <returns> Vraca izmenjen tip nadmetanja</returns>
+            <response code="200">Updatovanje je uspesno izvrseno</response>
+            <response code="404">Nije pronadjen tip nadmetanja sa prosledjenim id-jem</response>
+            <response code="500">Desila se greska prilikom updatovanja tipa nadmetanja</response>
+        </member>
+        <member name="M:AuctionService.Controllers.TipJavnogNadmetanjaController.postStatusNadmetanja(AuctionService.DtoModels.TipNadmetanjaCreationDto)">
+            <summary>
+            Kreira novi tip nadmetanja
+            </summary>
+            <param name="tipNadmetanjaDto">Body koji sadzi tip nadmetanja koji treba da se kreira</param>
+            <returns> Kreirani tip nadmetanja </returns>
+            <response code="201">Kreiranje tipa nadmetanja je uspesno izvrseno</response>
+        </member>
+        <member name="P:AuctionService.DtoModels.AdresaDto.adresaId">
+            <summary>
+            Id adrese
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.AdresaDto.ulica">
+            <summary>
+            Ulica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.AdresaDto.broj">
+            <summary>
+            Broj ulice
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.AdresaDto.mesto">
+            <summary>
+            Mesto
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.AdresaDto.postanskiBroj">
+            <summary>
+            Postanski broj
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.AdresaDto.Drzava">
+            <summary>
+            Drzava
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeConformationDto.javnoNadmetanjeID">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.datum">
+            <summary>
+            Datum javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.vremePocetka">
+            <summary>
+            Vreme pocetka javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.vremeKraja">
+            <summary>
+            Vreme kraja javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.pocetnaCenaPoHektaru">
+            <summary>
+            Pocetna cena po hektaru
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.izuzeto">
+            <summary>
+            Da li je javno nadmetanje izuzeto iz javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.izlicitiranaCena">
+            <summary>
+            Izlicitirana cena na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.periodZakupa">
+            <summary>
+            Period zakupa javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.brojUcesnika">
+            <summary>
+            Broj ucesnika na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.visinaDopuneDepozita">
+            <summary>
+            Visina dopune depozita 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.krug">
+            <summary>
+            Krug javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.statusNadmetanjaID">
+            <summary>
+            Id statusa javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.tipID">
+            <summary>
+            Id tipa javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.ovlascenoLiceID">
+            <summary>
+            ID ovlascenog lica javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.prijavljeniKupciID">
+            <summary>
+            Lista prijavljenih kupaca na javno nadmetanje
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.adresaID">
+            <summary>
+            Adresa odrzavanja javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.najboljiPonudjacID">
+            <summary>
+            Najbolji ponudjac na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeCreationDto.parceleID">
+            <summary>
+            Lista parcela na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.javnoNadmetanjeID">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.datum">
+            <summary>
+            Datum javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.vremePocetka">
+            <summary>
+            Vreme pocetka javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.vremeKraja">
+            <summary>
+            Vreme kraja javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.pocetnaCenaPoHektaru">
+            <summary>
+            Pocetna cena po hektaru
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.izuzeto">
+            <summary>
+            Da li je javno nadmetanje izuzeto 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.izlicitiranaCena">
+            <summary>
+            Izlicitirana cena na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.periodZakupa">
+            <summary>
+            Period zakupa parcele
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.brojUcesnika">
+            <summary>
+            Broj ucesnika na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.visinaDopuneDepozita">
+            <summary>
+            Visina depozita za uplatu
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.krug">
+            <summary>
+            Krug javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.statusNadmetanjaID">
+            <summary>
+            Id statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.tipID">
+            <summary>
+            Id tipa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.ovlascenoLiceID">
+            <summary>
+            Id ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.prijavljeniKupciID">
+            <summary>
+            Lista id-jeva kupaca koji ucestvuju na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.adresaID">
+            <summary>
+            Id adrese javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.najboljiPonudjacID">
+            <summary>
+            Id kupca koji je najbolji ponudjac
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.parceleID">
+            <summary>
+            Lista id-jeva parcela koje ucestvuju na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.ovlascenoLice">
+            <summary>
+            Ovlasceno lice
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.parcele">
+            <summary>
+            Lista parcela 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.najboljiPonudjac">
+            <summary>
+            Kupac koji je najbolji ponudjac
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.prijavljeniKupci">
+            <summary>
+            Lista prijavljenih kupaca 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeDto.adreasa">
+            <summary>
+            Adresa javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.javnoNadmetanjeID">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.datum">
+            <summary>
+            Datum javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.vremePocetka">
+            <summary>
+            Vreme pocetka javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.vremeKraja">
+            <summary>
+            Vreme kraja javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.pocetnaCenaPoHektaru">
+            <summary>
+            Pocetna cena po hektaru 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.izuzeto">
+            <summary>
+            Da li je jn izuzeto ili ne
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.izlicitiranaCena">
+            <summary>
+            Izlicitirana cena na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.periodZakupa">
+            <summary>
+            Period zakupa parcele
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.brojUcesnika">
+            <summary>
+            Broj ucesnika na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.visinaDopuneDepozita">
+            <summary>
+            Visina dopune depozita
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.krug">
+            <summary>
+            Krug javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.statusNadmetanjaID">
+            <summary>
+            ID statusa nadetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.tipID">
+            <summary>
+            Id tipa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.ovlascenoLiceID">
+            <summary>
+            Id ovlascenog lica 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.prijavljeniKupciID">
+            <summary>
+            Lista id-jeva prijavljenih kupaca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.adresaID">
+            <summary>
+            Adresa odrzavanja nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.najboljiPonudjacID">
+            <summary>
+            Id najboljeg ponudjaca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.JavnoNadmetanjeUpdateDto.parceleID">
+            <summary>
+            Lista id-jeva parcela na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.kupacID">
+            <summary>
+            Id kupca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.fizickoPravnoLice">
+            <summary>
+            Da li je kupac fizicno ili pravno lice
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.osvarenaPovrsina">
+            <summary>
+            Ostvarena povrsina
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.zabrana">
+            <summary>
+            Da li kupac ima zabranu
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.pocetakZabrane">
+            <summary>
+            Period zabrane
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.duzinaZabrane">
+            <summary>
+            Duzina trajanja zabrne
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.prestanakZabrane">
+            <summary>
+            Prestanak zabrane
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.ovlascenoLiceId">
+            <summary>
+            Id ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.prioritetId">
+            <summary>
+            Id prioriteta kupca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.lice">
+            <summary>
+            Lice
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.brTel1">
+            <summary>
+            Broj telefona
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.brTel2">
+            <summary>
+            Broj telefona
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.adresaId">
+            <summary>
+            Adresa kupca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.uplataId">
+            <summary>
+            Id uplate kupca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.email">
+            <summary>
+            Email kupca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.KupacDto.brRacuna">
+            <summary>
+            Broj racuna kupca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaConformationDto.licitacijaID">
+            <summary>
+            Id licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaCreationDto.broj">
+            <summary>
+            Broj licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaCreationDto.godina">
+            <summary>
+            Godina licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaCreationDto.datum">
+            <summary>
+            Datum licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaCreationDto.ogranicenja">
+            <summary>
+            Ogranicenja licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaCreationDto.korakCene">
+            <summary>
+            Korak cene licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaCreationDto.javnoNadmetanjeId">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaCreationDto.rokZaDostavljanje">
+            <summary>
+            Rok za dostavu prijave na licitaciju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.licitacijaId">
+            <summary>
+            Id licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.broj">
+            <summary>
+            Broj licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.godina">
+            <summary>
+            Godina licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.datum">
+            <summary>
+            Datum licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.ogranicenja">
+            <summary>
+            Ograicenja licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.korakCene">
+            <summary>
+            Korak cene licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.javnoNadmetanjeId">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaDto.rokZaDostavljanje">
+            <summary>
+            Rok za dostavljanje prijave na licitaciju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.licitacijaID">
+            <summary>
+            Id licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.broj">
+            <summary>
+            Broj licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.godina">
+            <summary>
+            Godina licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.datum">
+            <summary>
+            Datum licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.ogranicenja">
+            <summary>
+            Ogranicenja licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.korakCene">
+            <summary>
+            Korak cene licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.javnoNadmetanjeId">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.LicitacijaUpdateDto.rokZaDostavljanje">
+            <summary>
+            Rok za dostavljanje prijave
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.OvlascenoLiceDto.ovlascenoLiceId">
+            <summary>
+            Id ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.OvlascenoLiceDto.ime">
+            <summary>
+            Ime ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.OvlascenoLiceDto.prezime">
+            <summary>
+            Prezime ovlascenog lica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.OvlascenoLiceDto.licaZaKojaVrsiLicitaciju">
+            <summary>
+            Lista lica za koje se vrsi licitacija
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.OvlascenoLiceDto.brojTabli">
+            <summary>
+            Lista broja tabli
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.ParcelaDto.parcelaId">
+            <summary>
+            Id parcele
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.StatusJavnogNadmetanjaUpdateDto.statusNadmetanjaID">
+            <summary>
+            Id statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.StatusJavnogNadmetanjaUpdateDto.naziv">
+            <summary>
+            Naziv statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.StatusNadmetanjaConformationDto.statusNadmetanjaID">
+            <summary>
+            Id statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.StatusNadmetanjaCreationDto.naziv">
+            <summary>
+            Naziv statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.StatusNadmetanjaDto.naziv">
+            <summary>
+            Naziv statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.TipJavnogNadmetanjaConformationDto.tipJavnogNadmetanjaID">
+            <summary>
+            Id tipa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.TipJavnogNadmetanjaUpdateDto.tipJavnogNadmetanjaID">
+            <summary>
+            Id tipa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.TipJavnogNadmetanjaUpdateDto.nazivTipa">
+            <summary>
+            Naziv tipa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.TipNadmetanjaCreationDto.nazivTipa">
+             <summary>
+             Naziv tipa nadmetanja
+             </summary>
+            
+        </member>
+        <member name="P:AuctionService.DtoModels.TipNadmetanjaDto.nazivTipa">
+            <summary>
+            Naziv tipa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.javnoNadmetanjeID">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.datum">
+            <summary>
+            Datum pocetka javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.vremePocetka">
+            <summary>
+            Vreme pocetka javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.vremeKraja">
+            <summary>
+            Vreme kraja javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.pocetnaCenaPoHektaru">
+            <summary>
+            Pocetna cena javnog nadmetanja po hektaru
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.izuzeto">
+            <summary>
+            Da li je javno nadmetanje izuzeto ili nije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.izlicitiranaCena">
+            <summary>
+            Izlicitirana cena javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.periodZakupa">
+            <summary>
+            Period zakupa parcele iz javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.brojUcesnika">
+            <summary>
+            Broj ucesnika u javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.visinaDopuneDepozita">
+            <summary>
+            Visina depozita javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.krug">
+            <summary>
+            Krug javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.statusNadmetanjaID">
+            <summary>
+            Id statusa javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.tipID">
+            <summary>
+            Id tipa javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.ovlascenoLiceID">
+            <summary>
+            Id ovlascenog lica javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.prijavljeniKupciID">
+            <summary>
+            Lista prijavljenih kupaca na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.adresaID">
+            <summary>
+            Adresa javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.najboljiPonudjacID">
+            <summary>
+            Id kupca koji je najbolji ponudjac na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.parceleID">
+            <summary>
+            Lista parcela koje se nalaze na javnom nadmetanju
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.ovlascenoLice">
+            <summary>
+            Ovlasceno lice 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.parcele">
+            <summary>
+            Parcele
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.najboljiPonudjac">
+            <summary>
+            Najbolji ponudjac
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.prijavljeniKupci">
+            <summary>
+            Lista kupaca
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.JavnoNadmetanje.adreasa">
+            <summary>
+            Adresa 
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.licitacijaID">
+            <summary>
+            Licitacija id
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.broj">
+            <summary>
+            Broj licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.godina">
+            <summary>
+            Godina odrzavanja licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.datum">
+            <summary>
+            Datum licitacija
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.ogranicenja">
+            <summary>
+            Ogranicenja licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.korakCene">
+            <summary>
+            Korak cene licitacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.listaDokumentacijeFizickaLica">
+            <summary>
+            Lista dokumentacije koju podnose fizicka lica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.listaDokumentacijePravnaLica">
+            <summary>
+            Lista dokumentacije koju podnose pravna lica
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.javnoNadmetanjeId">
+            <summary>
+            Id javnog nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.Licitacija.rokZaDostavljanje">
+            <summary>
+            Rok za dostavljanje dokumentacije
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.StatusNadmetanja.statusNadmetanjaID">
+            <summary>
+            Id statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.StatusNadmetanja.naziv">
+            <summary>
+            Naziv statusa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="F:AuctionService.Entities.TipJavnogNadmetanja.tipJavnogNadmetanjaID">
+            <summary>
+            Id tipa nadmetanja
+            </summary>
+            
+        </member>
+        <member name="P:AuctionService.Entities.TipJavnogNadmetanja.nazivTipa">
+            <summary>
+            Naziv tipa nadmetanja
+            </summary>
+            
+        </member>
+    </members>
+</doc>

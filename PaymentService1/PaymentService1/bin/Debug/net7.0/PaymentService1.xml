@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PaymentService1</name>
+    </assembly>
+    <members>
+        <member name="M:PaymentService1.Controllers.AuthController.Authenticate(PaymentService1.Models.Principal)">
+            <summary>
+            Sluzi za autentifikaciju korisnika
+            </summary>
+            <param name="principal">Model sa podacima na osnovu kojih se vrši autentifikacija</param>
+            <returns></returns>
+        </member>
+        <member name="M:PaymentService1.Controllers.KursnaListaController.getKurs">
+            <summary>
+            Vraca sve kursne liste
+            </summary>
+            <returns>Lista kurseva</returns>
+        </member>
+        <member name="M:PaymentService1.Controllers.KursnaListaController.getKursById(System.Guid)">
+            <summary>
+            Vraca kurs sa zeljenim id-jem
+            </summary>
+            <param name="kursnaListaId">Id kursa</param>
+            <returns>Tacno jedan kurs</returns>
+        </member>
+        <member name="M:PaymentService1.Controllers.KursnaListaController.postKurs(PaymentService1.Models.KursnaListaCreationDto)">
+             <summary>
+             Kreiranje novog kursa
+             </summary>
+             <param name="kurs">Model kursne liste</param>
+             <returns>Potvrda o kreiranju novog kursa</returns>
+             <remarks>
+             Primer zahteva za kreiranje novog kursa
+            {
+            "datum": "2023-02-13T14:26:46.623Z",
+            "valuta": "Romanian lei",
+            "vrednost": 24
+            }
+             </remarks>
+        </member>
+        <member name="M:PaymentService1.Controllers.KursnaListaController.deleteKurs(System.Guid)">
+            <summary>
+            Brisanje kursa
+            </summary>
+            <param name="kursnaListaId">Id kursa</param>
+            <returns></returns>
+        </member>
+        <member name="M:PaymentService1.Controllers.KursnaListaController.putKurs(PaymentService1.Entities.KursnaLista)">
+             <summary>
+             Modifikovanje kursa
+             </summary>
+             <param name="kurs">Model kursne liste</param>
+             <returns>Potvrda o modifikovanoj kursnoj listi</returns>
+             <remarks>
+             Primer zahteva za modifikovanje kursa
+             {
+            "kursnaListaID": "1de13266-85e8-4120-8b1f-daacc32c5811",
+            "datum": "2023-02-13T14:28:31.166Z",
+            "valuta": "Euro",
+            "vrednost": 117
+            }
+             </remarks>
+        </member>
+        <member name="M:PaymentService1.Controllers.UplataController.getUplate">
+            <summary>
+            Vraca sve uplate
+            </summary>
+            <returns>Lista uplata</returns>
+        </member>
+        <member name="M:PaymentService1.Controllers.UplataController.getUplataById(System.Guid)">
+            <summary>
+            Vraca uplatu sa zeljenim id-jem
+            </summary>
+            <param name="uplataId">Id uplate</param>
+            <returns>Tacno jednu uplatu</returns>
+        </member>
+        <member name="M:PaymentService1.Controllers.UplataController.postKontaktOsoba(PaymentService1.Models.UplataCreationDto)">
+             <summary>
+             Kreiranje nove uplate
+             </summary>
+             <param name="uplata">Model uplate</param>
+             <returns>Potvrda o kreiranoj uplati</returns>
+             <remarks>
+             Primer zahteva za kreiranje nove uplate
+             {
+            "brojRacuna": "1111",
+            "pozivNaBroj": "121212",
+            "iznos": 20500,
+            "uplatilac": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "svrhaUplate": "svrha uplate1",
+            "datum": "2023-02-13T14:19:26.242Z",
+            "javnoNadmetanje": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+            }
+             </remarks>
+        </member>
+        <member name="M:PaymentService1.Controllers.UplataController.deleteUplata(System.Guid)">
+            <summary>
+            Brisanje uplate
+            </summary>
+            <param name="uplataId">Id uplate</param>
+            <returns></returns>
+        </member>
+        <member name="M:PaymentService1.Controllers.UplataController.putUplata(PaymentService1.Entities.Uplata)">
+             <summary>
+             Modifikovanje uplate
+             </summary>
+             <param name="uplata">Model uplate</param>
+             <returns>Potvrda o modifikovanoj uplati</returns>
+             <remarks>
+             Primer zahteva za modifikovanje uplate
+             {
+             "uplataID": "a215e4cb-a427-40cf-88b2-8488d140a939",
+            "brojRacuna": "1122564",
+            "pozivNaBroj": "12000",
+            "iznos": 23000,
+            "uplatilac": "a215e4cb-a427-40cf-88b2-8488d140a939",
+            "svrhaUplate": "svrha1",
+            "datum": "2023-02-13T14:20:40.417Z",
+            "javnoNadmetanje": "a215e4cb-a427-40cf-88b2-8488d140a939"
+            }
+             </remarks>
+        </member>
+        <member name="T:PaymentService1.Models.KursnaListaConfirmationDto">
+            <summary>
+            Dto o potvrdi kursne liste
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.KursnaListaConfirmationDto.KursnaListaID">
+            <summary>
+            Id kursne liste
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.KursnaListaConfirmationDto.valuta">
+            <summary>
+            Valuta
+            </summary>
+        </member>
+        <member name="T:PaymentService1.Models.KursnaListaCreationDto">
+            <summary>
+            Dto za kreiranje kursne liste
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.KursnaListaCreationDto.datum">
+            <summary>
+            Datum
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.KursnaListaCreationDto.valuta">
+            <summary>
+            Valuta
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.KursnaListaCreationDto.vrednost">
+            <summary>
+            Vrednost valute
+            </summary>
+        </member>
+        <member name="T:PaymentService1.Models.KursnaListaDto">
+            <summary>
+            Dto kurne liste
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.KursnaListaDto.KursnaListaID">
+            <summary>
+            Id kursne liste
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.KursnaListaDto.valuta">
+            <summary>
+            Valuta
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.Message.serviceName">
+            <summary>
+            Naziv servisa
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.Message.method">
+            <summary>
+            Metoda
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.Message.information">
+            <summary>
+            Detalji
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.Message.error">
+            <summary>
+            Greska
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.Principal.Username">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.Principal.Password">
+            <summary>
+            Lozinka korisnika.
+            </summary>
+        </member>
+        <member name="T:PaymentService1.Models.UplataConfirmationDto">
+            <summary>
+            Dto potvrde uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataConfirmationDto.UplataID">
+            <summary>
+            Id uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataConfirmationDto.brojRacuna">
+            <summary>
+            Broj racuna uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataConfirmationDto.iznos">
+            <summary>
+            Iznos uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataConfirmationDto.uplatilac">
+            <summary>
+            Uplatilac
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataConfirmationDto.datum">
+            <summary>
+            Datum uplate
+            </summary>
+        </member>
+        <member name="T:PaymentService1.Models.UplataCreationDto">
+            <summary>
+            Dto za kreiranje uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataCreationDto.brojRacuna">
+            <summary>
+            Broj racuna
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataCreationDto.pozivNaBroj">
+            <summary>
+            Poziv na broj
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataCreationDto.iznos">
+            <summary>
+            Iznos uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataCreationDto.uplatilac">
+            <summary>
+            Uplatilac
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataCreationDto.svrhaUplate">
+            <summary>
+            Svrha uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataCreationDto.datum">
+            <summary>
+            Datum uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataCreationDto.javnoNadmetanje">
+            <summary>
+            Javno nadmetanje
+            </summary>
+        </member>
+        <member name="T:PaymentService1.Models.UplataDto">
+            <summary>
+            Dto uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataDto.UplataID">
+            <summary>
+            Id uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataDto.brojRacuna">
+            <summary>
+            Broj racuna uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataDto.iznos">
+            <summary>
+            Iznos uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataDto.uplatilac">
+            <summary>
+            Uplatilac
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.UplataDto.datum">
+            <summary>
+            Datum uplate
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.User.Id">
+            <summary>
+            ID korisnika.
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.User.FirstName">
+            <summary>
+            Ime korisnika.
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.User.LastName">
+            <summary>
+            Prezime korisnika.
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.User.UserName">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.User.Email">
+            <summary>
+            Email korisnika.
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.User.Password">
+            <summary>
+            Hash-ovana sifra korisnika.
+            </summary>
+        </member>
+        <member name="P:PaymentService1.Models.User.Salt">
+            <summary>
+            Salt.
+            </summary>
+        </member>
+        <member name="M:PaymentService1.ServiceCalls.ILogerService.CreateMessage(PaymentService1.Models.Message)">
+            <summary>
+            Metoda za kreiranje poruke logeru
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:PaymentService1.ServiceCalls.LoggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:PaymentService1.ServiceCalls.LoggerService.CreateMessage(PaymentService1.Models.Message)">
+            <summary>
+            Kreiranje poruke - metoda
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:PaymentService1.ServiceCalls.UserService.HashPassword(System.String)">
+            <summary>
+            Vrši hash-ovanje korisnicke lozinke
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <returns>Generisan hash i salt</returns>
+        </member>
+        <member name="M:PaymentService1.ServiceCalls.UserService.VerifyPassword(System.String,System.String,System.String)">
+            <summary>
+            Proverava validnost prosleđene lozinke sa prosleđenim hash-om
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <param name="savedHash">Sacuvan hash</param>
+            <param name="savedSalt">Sacuvan salt</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

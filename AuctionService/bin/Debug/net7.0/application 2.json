@@ -1,0 +1,21 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  /*"Jwt": {
+    "Key": "secretsecretkey",
+    "Issuer": "URIS.uns.ac.rs"
+  },*/
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "javnoNadmetanjeDB": "Server=sql_server_demo;Database=javnoNadmetanjeDB;User Id=SA;Password=reallyStrongPassword123Valentina00;MultipleActiveResultSets=true"
+  },
+  "Services": {
+    "LoggerService": "http://localhost:55201/",
+    "Kupac_SK": "http://localhost:44200/"
+  }
+}

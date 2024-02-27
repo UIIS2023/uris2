@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KorisnikService</name>
+    </assembly>
+    <members>
+        <member name="M:KorisnikService.Controllers.AuthController.Authenticate(KorisnikService.DtoModels.Principal)">
+            <summary>
+            Sluzi za autentifikaciju korisnika
+            </summary>
+            <param name="principal">Model sa podacima na osnovu kojih se vrši autentifikacija</param>
+            <returns></returns>
+        </member>
+        <member name="M:KorisnikService.Controllers.KorisnikController.getAllKorisnici">
+            <summary>
+            Vraca sve korisnike.
+            </summary>
+            <returns> Lista korisnika</returns>
+            <response code="200">Lista korisnika</response>
+            <response code="404">Nije pronadjen ni jedan korisnik</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.KorisnikController.getKorisnikById(System.Guid)">
+            <summary>
+            Vraca samojednog korisnika.
+            </summary>
+            <returns> Jedan korisnik</returns>
+            <response code="200">Korisni je uspesno pronadjen</response>
+            <response code="404">Korisnik nije pronadjen</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.KorisnikController.deleteKorisnik(System.Guid)">
+            <summary>
+            Brise korisnika.
+            </summary>
+            <response code="204">Korisnik je uspesno obrisan</response>
+            <response code="404">Nema korisnika sa prosledjenim id-jem</response>
+            <response code="500">Greska prilikom brisanja korisnika</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.KorisnikController.postKorisnik(KorisnikService.DtoModels.KorisnikCreateDto)">
+            <summary>
+            Kreiranje korisnika.
+            </summary>
+            <returns>Krreirani korisnik</returns>
+            <response code="201">Korisnik je uspesno kreiran</response>
+            <response code="500">Greska prilikom kreiranja korisnika</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.KorisnikController.putKorisnik(KorisnikService.DtoModels.KorisnikUpdateDto)">
+            <summary>
+            Izmena korisnika.
+            </summary>
+            <response code="200">Korisnik je uspesno izmenjen</response>
+            <response code="404">Nema korisnika sa prosledjenim id-jem</response>
+            <response code="500">Greska prilikom izmene korisnika</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.TipKorisnikaController.getAllTipoviKorisnika">
+            <summary>
+            Vraca sve tipove korisnika.
+            </summary>
+            <returns> Lista tipova korisnika</returns>
+            <response code="204">Nema tipova korisnika</response>
+            <response code="200">Lista tipova korisnika</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.TipKorisnikaController.getTipKorisnikaById(System.Guid)">
+            <summary>
+            Vraca tip korisnika sa prosledjenim id-jem.
+            </summary>
+            <returns> Vraca tip korisnika</returns>
+            <response code="200">Tip korisnika sa prosledjenim id-jem</response>
+            <response code="404">Korisnik sa prosledjenim id-jem nije prosnadjen</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.TipKorisnikaController.deleteTipKorisnika(System.Guid)">
+             <summary>
+            Brisanje tipa korisnika.
+             </summary>
+             <response code="204">Tip korisnika sa prosledjenim id-jem je uspesno obrisan</response>
+             <response code="404">Korisnik sa prosledjenim id-jem nije prosnadjen</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.TipKorisnikaController.postTipKorisnika(KorisnikService.DtoModels.TipKorisnikaDto)">
+            <summary>
+            Kreiranje tipa korisnika.
+            </summary>
+            <returns> Vraca kreirani tip korisnika</returns>
+            <response code="201">Tip korisnika je uspesno kreiran</response>
+            <response code="500">Greska prilikom kreiranja tipa korisnika</response>
+        </member>
+        <member name="M:KorisnikService.Controllers.TipKorisnikaController.putTipKorisnika(KorisnikService.DtoModels.TipKorisnikaUpdateDto)">
+            <summary>
+            Izmena tipa korisnika.
+            </summary>
+            <returns> Vraca izmenjeni tip korisnika</returns>
+            <response code="200">Tip korisnika je uspesno izmenjen</response>
+            <response code="500">Greska prilikom izmene tipa korisnika</response>
+            <response code="404">Korisnik sa prosledjenim id-jem nije pronadjen</response>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikCreateDto.tipKorisnikaId">
+            <summary>
+            tip korisnika id
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikCreateDto.ime">
+            <summary>
+            Ime korisnika
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikCreateDto.prezime">
+            <summary>
+            Prezime korisnika
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikCreateDto.korisnickoIme">
+            <summary>
+            Korisnisko ime
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikCreateDto.lozinka">
+            <summary>
+            Lozinka
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikDto.tipKorisnikaId">
+            <summary>
+            Tip korisnika id
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikDto.ime">
+            <summary>
+            Ime korisnika
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikDto.prezime">
+            <summary>
+            Prezime korisnika
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikDto.korisnickoIme">
+            <summary>
+            Korisnicko ime
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikDto.lozinka">
+            <summary>
+            Lozinka
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikUpdateDto.korisnikId">
+            <summary>
+            Korisnik id
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikUpdateDto.tipKorisnikaId">
+            <summary>
+            Tip korisnika id
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikUpdateDto.ime">
+            <summary>
+            Ime 
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikUpdateDto.prezime">
+            <summary>
+            Prezime
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikUpdateDto.korisnickoIme">
+            <summary>
+            Korisnicko ime
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.KorisnikUpdateDto.lozinka">
+            <summary>
+            Lozinka
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.Principal.Username">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.Principal.Password">
+            <summary>
+            Lozinka korisnika.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.TipKorisnikaDto.uloga">
+            <summary>
+            Uloga
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.TipKorisnikaUpdateDto.TipKorisnikaId">
+            <summary>
+            Tip korisnika id 
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.TipKorisnikaUpdateDto.uloga">
+            <summary>
+            Uloga
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.User.Id">
+            <summary>
+            ID korisnika.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.User.FirstName">
+            <summary>
+            Ime korisnika.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.User.LastName">
+            <summary>
+            Prezime korisnika.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.User.UserName">
+            <summary>
+            Korisnicko ime.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.User.Email">
+            <summary>
+            Email korisnika.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.User.Password">
+            <summary>
+            Hash-ovana sifra korisnika.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.DtoModels.User.Salt">
+            <summary>
+            Salt.
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.Korisnik.korisnikId">
+            <summary>
+            Korisnik id
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.Korisnik.tipKorisnikaId">
+            <summary>
+            Tip korisnika id
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.Korisnik.ime">
+            <summary>
+            Ime 
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.Korisnik.prezime">
+            <summary>
+            Prezime
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.Korisnik.korisnickoIme">
+            <summary>
+            Korisnicko ime
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.Korisnik.lozinka">
+            <summary>
+            Lozinka
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.TipKorisnika.tipKorisnikaId">
+            <summary>
+            Korisnik id
+            </summary>
+        </member>
+        <member name="P:KorisnikService.Entities.TipKorisnika.uloga">
+            <summary>
+            Uloga korisnika
+            </summary>
+        </member>
+        <member name="T:KorisnikService.Migrations.migracije">
+            <inheritdoc />
+        </member>
+        <member name="M:KorisnikService.Migrations.migracije.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:KorisnikService.Migrations.migracije.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:KorisnikService.Migrations.migracije.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:KorisnikService.Service.UserService.HashPassword(System.String)">
+            <summary>
+            Vrši hash-ovanje korisnicke lozinke
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <returns>Generisan hash i salt</returns>
+        </member>
+        <member name="M:KorisnikService.Service.UserService.VerifyPassword(System.String,System.String,System.String)">
+            <summary>
+            Proverava validnost prosleđene lozinke sa prosleđenim hash-om
+            </summary>
+            <param name="password">Korisnicka lozinka</param>
+            <param name="savedHash">Sacuvan hash</param>
+            <param name="savedSalt">Sacuvan salt</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

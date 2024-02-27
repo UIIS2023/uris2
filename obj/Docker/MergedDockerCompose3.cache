@@ -1,0 +1,18 @@
+name: dockercompose5805579754468863378
+services:
+  auctionservice:
+    build:
+      context: /Users/osx/Desktop/AuctionService
+      dockerfile: AuctionService/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: auctionservice
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose5805579754468863378_default
